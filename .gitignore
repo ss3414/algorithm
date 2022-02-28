@@ -1,0 +1,14 @@
+# 文件夹
+/.idea/
+/venv/
+/build/
+/dist/
+/**.egg-info/
+
+# 项目
+/untitled/
+
+# 文件
+*.log
+*.pyc
+*.whl
