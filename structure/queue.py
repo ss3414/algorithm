@@ -23,8 +23,7 @@ class CircularQueue:
         if self.rear == self.front:
             print("队列已空")
             return
-        # fixme 出队
-        de_queue_element = self.element_list[self.front]
+        self.element_list[self.front] = None
         self.front = (self.front + 1) % len(self.element_list)
 
     def output(self):
@@ -42,3 +41,4 @@ test_queue.en_queue(3)
 test_queue.de_queue()
 test_queue.en_queue(4)
 test_queue.output()
+print(test_queue.element_list)
