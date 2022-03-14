@@ -4,8 +4,6 @@
 # 时间复杂度：最坏O(nlogn)，最好O(nlogn)，不稳定
 # 利用堆实现的排序
 
-import math
-
 def down(list, parent, length):
     temp = list[parent]
     child = 2 * parent + 1
@@ -20,7 +18,7 @@ def down(list, parent, length):
     list[parent] = temp
 
 def build(list):
-    i = math.floor((len(list) - 2) / 2)
+    i = (len(list) - 2) // 2
     while i >= 0:
         down(list, i, len(list))
         i -= 1

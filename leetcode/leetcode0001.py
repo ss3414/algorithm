@@ -32,26 +32,26 @@ def test2(nums: list, target: int) -> list:
         j += 1
     return []
 
-test_list = [2, 7, 11, 15]
+tests = [2, 7, 11, 15]
 target = 9
-# print(test(test_list, target))
+# print(test(tests, target))
 
-print(test2(test_list, target))
+print(test2(tests, target))
 
 # ************************************************************半分割线******************************
 
 # LeetCode提交代码
-class Solution:
-    def twoSum(self, nums: list, target: int) -> list:
-        i = 0
-        data = {}
-        while i < len(nums):
-            data.update({nums[i]: i})
-            i += 1
-        j = 0
-        while j < len(nums):
-            k = target - nums[j]
-            if k in data and data.get(k) != j:
-                return [data.get(k), j]
-            j += 1
-        return []
+# class Solution:
+#     def twoSum(self, nums: list, target: int) -> list:
+#         i = 0
+#         data = {}
+#         while i < len(nums):
+#             data.update({nums[i]: i})
+#             i += 1
+#         j = 0
+#         while j < len(nums):
+#             k = target - nums[j]
+#             if k in data and data.get(k) != j:
+#                 return [data.get(k), j]
+#             j += 1
+#         return []

@@ -6,8 +6,6 @@
 # 最好：元素均匀分配到每一个桶中
 # 计数排序的改进版
 
-import math
-
 list = [9, 9, 7, 7, 5, 5, 3, 3, 1]
 
 max = list[0]
@@ -26,7 +24,7 @@ for i in list:
 
 # 将元素放入桶中
 for i in list:
-    index = math.floor((i - min) / (d / (len(bucket) - 1)))  # 元素对应第几个桶
+    index = (i - min) // (d // (len(bucket) - 1))  # 元素对应第几个桶
     bucket[index].append(i)
 
 # 对每个桶内的元素再排序

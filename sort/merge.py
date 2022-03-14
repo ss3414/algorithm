@@ -6,14 +6,12 @@
 # 分治算法的典型应用，可分为自上而下的递归和自下而上的迭代（所有递归的方法都可以用迭代重写）
 # 分治算法：将复杂的问题拆分求解，再将结果汇总
 
-import math
-
 # 递归拆分排序+汇总
 def merge(list):
     length = len(list)
     if length <= 1:
         return list
-    middle = math.floor(length / 2)
+    middle = length // 2
     # 将输入序列拆分成左右序列
     left, right = list[0:middle], list[middle:]
     # 递归拆分排序，最终汇总

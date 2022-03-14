@@ -2,43 +2,41 @@
 # todo 0021（Merge Two Sorted Lists）
 # 合并两个有序链表
 
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from common import ListNode
+from common import linklist2str
 
 # 把链表节点打散冒泡排序，时间复杂度高
 def test(list1: ListNode, list2: ListNode):
-    sort_list = []
+    sorts = []
     if list1 is not None:
         while list1.next is not None:
-            sort_list.append(list1)
+            sorts.append(list1)
             list1 = list1.next
-        sort_list.append(list1)
+        sorts.append(list1)
     if list2 is not None:
         while list2.next is not None:
-            sort_list.append(list2)
+            sorts.append(list2)
             list2 = list2.next
-        sort_list.append(list2)
+        sorts.append(list2)
     i = 0
-    while i < len(sort_list) - 1:
+    while i < len(sorts) - 1:
         j = 0
         is_sorted = True
-        while j < len(sort_list) - 1:
-            if sort_list[j].val > sort_list[j + 1].val:
-                temp = sort_list[j]
-                sort_list[j] = sort_list[j + 1]
-                sort_list[j + 1] = temp
+        while j < len(sorts) - 1:
+            if sorts[j].val > sorts[j + 1].val:
+                temp = sorts[j]
+                sorts[j] = sorts[j + 1]
+                sorts[j + 1] = temp
                 is_sorted = False
             j += 1
         if is_sorted:
             break
         i += 1
     k = 0
-    while k < len(sort_list) - 1:
-        sort_list[k].next = sort_list[k + 1]
-    if len(sort_list) > 0:
-        return sort_list[0]
+    while k < len(sorts) - 1:
+        sorts[k].next = sorts[k + 1]
+    if len(sorts) > 0:
+        return sorts[0]
     else:
         return None
 
@@ -65,7 +63,4 @@ def test2(list1: ListNode, list2: ListNode):
 list1 = None
 list2 = ListNode(1, None)
 output = test2(list1, list2)
-
-while output is not None:
-    print(output.val)
-    output = output.next
+print(linklist2str(output))

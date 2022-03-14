@@ -2,7 +2,7 @@
 # todo 0066（Plus One）
 # 加一
 
-# 考加法进位和数组扩容
+# 加法进位和数组扩容
 def test(digits: list):
     i = len(digits) - 1
     while i >= 0:

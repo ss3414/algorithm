@@ -8,4 +8,4 @@ list = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 gap = 1
 while gap < len(list) / 3:
     gap = gap * 3 + 1
-print(gap)  # fixme
+print(gap)

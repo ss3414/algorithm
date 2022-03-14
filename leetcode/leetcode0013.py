@@ -13,13 +13,13 @@
 # I/II/III/IV/IX（1~4，9）
 def test(s):
     data = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-    digit_list = list(s)
+    digits = list(s)
     i = 0
     total = 0
-    while i < len(digit_list):
-        value = data[digit_list[i]]
+    while i < len(digits):
+        value = data[digits[i]]
         # 罗马数字规律，左边的数字大于等于右边则为正，反之为负
-        if i == len(digit_list) - 1 or data[digit_list[i]] >= data[digit_list[i + 1]]:
+        if i == len(digits) - 1 or data[digits[i]] >= data[digits[i + 1]]:
             total += value
         else:
             total -= value

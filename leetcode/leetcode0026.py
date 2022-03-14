@@ -20,7 +20,7 @@ def test(nums: list):
     # print(nums)
     return len(data)
 
-# 数组元素两两比较，不相同则result加1，时间复杂度高
+# 数组元素两两比较，不相同则result加1
 def test2(nums: list):
     result = 1  # 至少有1个不相同的数
     i = 0
@@ -36,7 +36,7 @@ def test2(nums: list):
     print(nums)
     return result
 
-test_list = [1, 1, 2, 2, 3, 3]  # 输入数组是有序的
-# print(test(test_list))
+tests = [1, 1, 2, 2, 3, 3]  # 输入数组是有序的
+# print(test(tests))
 
-print(test2(test_list))
+print(test2(tests))
