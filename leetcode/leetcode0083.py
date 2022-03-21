@@ -3,9 +3,9 @@
 # 删除有序链表中的重复元素
 
 from common import ListNode
-from common import linklist2str
+from common import linkedlist2str
 
-# 时间复杂度高
+# 时间复杂度太高
 def test(head: ListNode):
     if head is None:
         return None
@@ -35,8 +35,8 @@ def test2(head):
     return head
 
 # output=test(ListNode(1,ListNode(1,ListNode(2,ListNode(3,ListNode(3,None))))))
-# print(linklist2str(output))
+# print(linkedlist2str(output))
 
 # print(test2(None))
 output = test2(ListNode(1, ListNode(1, ListNode(2, ListNode(3, ListNode(3, None))))))
-print(linklist2str(output))
+print(linkedlist2str(output))

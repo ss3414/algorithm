@@ -64,7 +64,7 @@ def level_order_traversal(root: Node):
     input_queue = Queue()
     input_queue.put(root)
     # 利用队列先进先出的特性，父节点出队子节点入队同时完成
-    while ~input_queue.empty():
+    while not input_queue.empty():
         output_node = input_queue.get()
         print(output_node.data)
         if output_node.left_child is not None:

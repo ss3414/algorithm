@@ -3,9 +3,9 @@
 # 合并两个有序链表
 
 from common import ListNode
-from common import linklist2str
+from common import linkedlist2str
 
-# 把链表节点打散冒泡排序，时间复杂度高
+# 把链表节点打散冒泡排序，时间复杂度太高
 def test(list1: ListNode, list2: ListNode):
     sorts = []
     if list1 is not None:
@@ -63,4 +63,4 @@ def test2(list1: ListNode, list2: ListNode):
 list1 = None
 list2 = ListNode(1, None)
 output = test2(list1, list2)
-print(linklist2str(output))
+print(linkedlist2str(output))

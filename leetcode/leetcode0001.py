@@ -37,21 +37,3 @@ target = 9
 # print(test(tests, target))
 
 print(test2(tests, target))
-
-# ************************************************************半分割线******************************
-
-# LeetCode提交代码
-# class Solution:
-#     def twoSum(self, nums: list, target: int) -> list:
-#         i = 0
-#         data = {}
-#         while i < len(nums):
-#             data.update({nums[i]: i})
-#             i += 1
-#         j = 0
-#         while j < len(nums):
-#             k = target - nums[j]
-#             if k in data and data.get(k) != j:
-#                 return [data.get(k), j]
-#             j += 1
-#         return []

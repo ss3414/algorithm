@@ -1,9 +1,10 @@
 # ****************************************************************分割线****************************************************************
 # todo 0100（Same Tree）
-# 相同的树
+# 判断两树是否相同
 
 from common import TreeNode
 
+# 递归
 def test(p: TreeNode, q: TreeNode, flag: bool):
     # print("p:{p} q:{q}".format(p=p.val,q=q.val))
     if p is None and q is None:  # 没有节点，递归结束

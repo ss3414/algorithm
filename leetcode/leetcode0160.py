@@ -3,7 +3,7 @@
 # 相交链表
 
 from common import ListNode
-from common import linklist2str
+from common import linkedlist2str
 
 # 获取链表长度
 def test(head: ListNode):
@@ -31,8 +31,8 @@ def test2(headA: ListNode, headB: ListNode):
             i += 1
     # 这里用（headA is not headB）无法判断Python对象是否相等，LeetCode环境可能重写了__eq__方法
     while headA is not None and headB is not None and headA is not headB:
-        # print("headA:{headA}".format(headA=linklist2str(headA)))
-        # print("headB:{headB}".format(headB=linklist2str(headB)))
+        # print("headA:{headA}".format(headA=linkedlist2str(headA)))
+        # print("headB:{headB}".format(headB=linkedlist2str(headB)))
         headA = headA.next
         headB = headB.next
     if headA is not None and headB is not None:
@@ -47,8 +47,8 @@ def test3(headA: ListNode, headB: ListNode):
     tempA = headA
     tempB = headB
     while tempA is not tempB:
-        print("tempA:{tempA}".format(tempA=linklist2str(tempA)))
-        print("tempB:{tempB}".format(tempB=linklist2str(tempB)))
+        print("tempA:{tempA}".format(tempA=linkedlist2str(tempA)))
+        print("tempB:{tempB}".format(tempB=linkedlist2str(tempB)))
         # 当headA遍历完之后再遍历headB，相当于headA+headB与headB+headA比较
         # 一定是在相等处或末尾相等
         tempA = headB if tempA is None else tempA.next  # 三目运算符
@@ -58,11 +58,11 @@ def test3(headA: ListNode, headB: ListNode):
 # headA=ListNode(1,ListNode(2,ListNode(3,ListNode(4,None))))
 # headB=ListNode(1,ListNode(3,ListNode(4,None)))
 # output=test2(headA,headB)
-# print(linklist2str(output))
+# print(linkedlist2str(output))
 
 # headA+headB：1,2,3,4,1,3,4
 # headB+headA：1,3,4,1,2,3,4
 headA = ListNode(1, ListNode(2, ListNode(3, ListNode(4, None))))
 headB = ListNode(1, ListNode(3, ListNode(4, None)))
 output = test3(headA, headB)
-print(linklist2str(output))
+print(linkedlist2str(output))

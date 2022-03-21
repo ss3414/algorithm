@@ -3,9 +3,9 @@
 # 反转链表
 
 from common import ListNode
-from common import linklist2str
+from common import linkedlist2str
 
-# 时间复杂度高
+# 时间复杂度太高
 def test(head: ListNode):
     nodes = []
     cursor = head
@@ -30,7 +30,7 @@ def test2(head: ListNode):
         new = head
         head = temp
         print("temp:{temp} next:{next} new:{new} head:{head}".format(
-            temp=linklist2str(temp), next=linklist2str(head.next if head is not None else ""), new=linklist2str(new), head=linklist2str(head)))
+            temp=linkedlist2str(temp), next=linkedlist2str(head.next if head is not None else ""), new=linkedlist2str(new), head=linkedlist2str(head)))
     return new
 
 # fixme 递归
@@ -40,11 +40,11 @@ def test3(head: ListNode):
     new = test3(head.next)
     head.next.next = head
     head.next = None
-    print("new:{new} head:{head}".format(new=linklist2str(new), head=linklist2str(head)))
+    print("new:{new} head:{head}".format(new=linkedlist2str(new), head=linkedlist2str(head)))
     return new
 
 # output=test(ListNode(1,ListNode(2,ListNode(3,None))))
 # output=test(ListNode(1,None))
 # output=test2(ListNode(1,ListNode(2,ListNode(3,None))))
 output = test3(ListNode(1, ListNode(2, ListNode(3, None))))
-print(linklist2str(output))
+print(linkedlist2str(output))

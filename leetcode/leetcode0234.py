@@ -5,7 +5,6 @@
 import copy
 
 from common import ListNode
-from common import linklist2str
 
 # 反转链表再比较，时间复杂度太高
 def test(head: ListNode):
@@ -58,15 +57,29 @@ def test3(head: ListNode):
         head = head.next
     return True
 
-# fixme 快慢指针
+# 快慢指针
 def test4(head: ListNode):
+    fast = slow = head
+    stack = [head.val]
+    # 快指针走完时，慢指针走到中间，再用栈储存前半段比较后半段
+    while fast.next and fast.next.next:
+        slow = slow.next
+        fast = fast.next.next
+        stack.append(slow.val)
+    if fast.next is None:  # 如果链表为偶数，中间元素出栈（快慢指针是从第一个元素开始前进）
+        stack.pop()
+    while slow.next:
+        slow = slow.next
+        temp = stack.pop()
+        print("temp:{temp} slow:{slow}".format(temp=temp, slow=slow.val))
+        if temp != slow.val:
+            return False
     return True
 
 # print(test(ListNode(1,ListNode(2,ListNode(1,None)))))
 # print(test(ListNode(1,ListNode(1,None))))
 
 # print(test2(ListNode(1,ListNode(2,ListNode(1,ListNode(1,None))))))
-print(test3(ListNode(1, ListNode(2, ListNode(1, ListNode(1, None))))))
+# print(test3(ListNode(1,ListNode(2,ListNode(1,ListNode(1,None))))))
 
-# class Solution:
-# def isPalindrome(self, head: Optional[ListNode]) -> bool:
+print(test4(ListNode(1, ListNode(2, ListNode(2, ListNode(1, None))))))

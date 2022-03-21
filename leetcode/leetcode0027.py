@@ -16,7 +16,7 @@ def test(nums: list, val: int):
 
 # ①题目要求只允许对输入数组进行操作，不允许新建其他数据结构
 # ②LeetCode根据返回值截取nums数组判断是否符合条件，即便nums中重复元素没删完不影响判断
-# ③有些语言不允许更改数组长度，LeetCode只能采用这种机制检测
+# ③有些语言不允许更改数组长度，LeetCode只能使用这种机制检测
 def test2(nums: list, val: int):
     result = 0
     i = 0

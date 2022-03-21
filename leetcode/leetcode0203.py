@@ -3,7 +3,7 @@
 # 删除链表元素
 
 from common import ListNode
-from common import linklist2str
+from common import linkedlist2str
 
 def test(head: ListNode, val: int):
     output = ListNode(0, None)  # 开头一个空节点
@@ -17,4 +17,4 @@ def test(head: ListNode, val: int):
     return output.next
 
 output = test(ListNode(1, ListNode(2, ListNode(3, None))), 2)
-print(linklist2str(output))
+print(linkedlist2str(output))
