@@ -22,7 +22,7 @@ def test(s: str, t: str):
         else:
             data.update({t[i]: t1 - 1})
         i += 1
-    # s用正数，t用负数，若字母出现次数相同，则最终只剩0
+    # s用正数，t用负数，如果字母出现次数相同，则最终只剩0
     if max(data.values()) > 0 or min(data.values()) < 0:
         return False
     else:

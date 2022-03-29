@@ -34,7 +34,7 @@ def test2(s: str, t: str):
     s1, s2 = {}, {}
     i = 0
     while i < len(s):
-        # ②若出现字符不对应则不是同构字符串
+        # ②如果出现字符不对应则不是同构字符串
         if s[i] in s1 and s1[s[i]] != t[i]:
             return False
         if t[i] in s2 and s2[t[i]] != s[i]:

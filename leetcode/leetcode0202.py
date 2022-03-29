@@ -21,7 +21,7 @@ def digit(n):
         div /= 10
     return digits
 
-# 哈希表
+# 规律
 def test(n: int):
     digits = digit(n)
     data = {}

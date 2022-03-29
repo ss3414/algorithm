@@ -12,13 +12,13 @@ class Solution:
     def mergeTrees(self, root1: TreeNode, root2: TreeNode) -> TreeNode:
         def test(root: TreeNode):
             output = []
-            input_queue = deque([root])
-            while len(input_queue) > 0:
-                node = input_queue.popleft()
+            queue = deque([root])
+            while len(queue) > 0:
+                node = queue.popleft()
                 output.append(node)
                 if node and (node.left or node.right):
-                    input_queue.append(node.left)
-                    input_queue.append(node.right)
+                    queue.append(node.left)
+                    queue.append(node.right)
             return output
 
         output1 = test(root1)

@@ -20,7 +20,7 @@ def test(nums: list):
     # print(nums)
     return len(data)
 
-# 数组元素两两比较，不相同则result加1
+# 数组元素两两比较，不相同则result加一
 def test2(nums: list):
     result = 1  # 至少有1个不相同的数
     i = 0

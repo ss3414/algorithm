@@ -10,13 +10,13 @@ class Solution:
     def averageOfLevels(self, root: TreeNode) -> list:
         # BFS将二叉树转数组有问题，None未加入数组
         nodes = []
-        input_queue = deque([root])
-        while len(input_queue) > 0:
-            node = input_queue.popleft()
+        queue = deque([root])
+        while len(queue) > 0:
+            node = queue.popleft()
             nodes.append(node.val if node else None)
             if node and (node.left or node.right):
-                input_queue.append(node.left)
-                input_queue.append(node.right)
+                queue.append(node.left)
+                queue.append(node.right)
         print(nodes)
 
         output = []
@@ -40,18 +40,18 @@ class Solution:
         output = []
         if not root:
             return output
-        input_queue = deque([root])
-        while len(input_queue) > 0:
+        queue = deque([root])
+        while len(queue) > 0:
             sum = 0
-            count = len(input_queue)
+            count = len(queue)
             i = 0
             while i < count:  # 用count而非完全依赖队列本身控制出入队
-                node = input_queue.popleft()
+                node = queue.popleft()
                 sum += node.val
                 if node.left:
-                    input_queue.append(node.left)
+                    queue.append(node.left)
                 if node.right:
-                    input_queue.append(node.right)
+                    queue.append(node.right)
                 i += 1
             output.append(float(sum / count))
         return output

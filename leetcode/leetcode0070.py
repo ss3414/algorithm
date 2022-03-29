@@ -19,7 +19,7 @@ def test(n: int):
 # 难点在于怎么把题目抽象成斐波那契数列
 # 1层楼梯，1种可能性（1）
 # 2层楼梯，2种可能性（11+2）
-# 3层楼梯，3种可能性（111+21+12）；3层楼梯相当于在2层基础上加1层，在1层基础上加两层；
+# 3层楼梯，3种可能性（111+21+12）；3层楼梯相当于在2层基础上加一层，在1层基础上加两层；
 # 在2层的所有可能性后面加1+在1层可能性后面加2=3层的所有可能性
 def test2(n: int):
     if n <= 1:
@@ -36,7 +36,7 @@ def test2(n: int):
         i += 1
     return dp[i - 1]
 
-# 递归+记忆数组
+# 记忆化搜索（递归+记忆数组）
 def test3(n: int, memo: list):
     print("n:{n} memo:{memo}".format(n=n, memo=memo))
     if n <= 1:
@@ -47,8 +47,8 @@ def test3(n: int, memo: list):
     return memo[n]
 
 # print(test(4))
-# print(test2(4))
+print(test2(4))
 
 n = 4
 memo = [0] * (n + 1)
-print(test3(n, memo))
+# print(test3(n, memo))

@@ -16,7 +16,7 @@ def test(p: TreeNode, q: TreeNode, flag: bool):
         # print("p:{p} q:{q}".format(p=p.val,q=q.val))
         flag = False
         return flag
-    flag = test(p.left, q.left, flag)  # fixme 必须要有返回值，Python是值传递还是引用传递？
+    flag = test(p.left, q.left, flag)
     flag = test(p.right, q.right, flag)
     return flag
 

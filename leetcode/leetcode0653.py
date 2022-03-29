@@ -25,16 +25,16 @@ class Solution:
         if root is None:
             return False
         data = set()
-        input_queue = deque([root])
-        while len(input_queue) > 0:
-            node = input_queue.popleft()
+        queue = deque([root])
+        while len(queue) > 0:
+            node = queue.popleft()
             if (k - node.val) in data:
                 return True
             data.add(node.val)
             if node.left:
-                input_queue.append(node.left)
+                queue.append(node.left)
             if node.right:
-                input_queue.append(node.right)
+                queue.append(node.right)
         return False
 
 left = TreeNode(2, left=TreeNode(1), right=TreeNode(3))

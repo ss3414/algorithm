@@ -29,16 +29,16 @@ class Solution:
         depth = 0
         if root is None:
             return depth
-        input_queue = deque([root])  # LeetCode中使用双端队列
-        while len(input_queue) > 0:
+        queue = deque([root])  # LeetCode中使用双端队列
+        while len(queue) > 0:
             depth += 1
-            breadth = len(input_queue)
+            breadth = len(queue)
             i = 0
             while i < breadth:
-                node = input_queue.popleft()
+                node = queue.popleft()
                 if node and node.children:
                     for child in node.children:
-                        input_queue.append(child)
+                        queue.append(child)
                 i += 1
         return depth
 

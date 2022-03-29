@@ -23,7 +23,7 @@ def test(haystack: str, needle: str):
 
 def test2(haystack: str, needle: str):
     i = 0
-    while i < len(haystack) - len(needle) + 1:  # 这里加1是为了应对两字符串都为空的情况，即使都为空也算找到
+    while i < len(haystack) - len(needle) + 1:  # 这里加一是为了应对两字符串都为空的情况，即使都为空也算找到
         if haystack[i:i + len(needle)] == needle:
             # print("i:{i} haystack:{haystack}".format(i=i,haystack=haystack[i:i+len(needle)]))
             return i  # 找到

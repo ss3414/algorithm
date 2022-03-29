@@ -14,14 +14,14 @@ class MinStack:
             self.min.append(val)  # self.min在这里是最小堆
 
     def pop(self) -> None:
-        # 若data出栈，则min中相同元素也出栈
+        # 如果data出栈，则min中相同元素也出栈
         if len(self.min) > 0 and self.top() == self.getMin():
             self.min.pop()
         self.data.pop()
 
     def top(self) -> int:
         if len(self.data) > 0:
-            temp = self.data.pop()  # 可以用data[0]代替栈的top()方法
+            temp = self.data.pop()  # 可以用data[-1]代替栈的top()方法
             self.data.append(temp)
             return temp
         else:

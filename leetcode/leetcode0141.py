@@ -4,7 +4,7 @@
 
 from common import ListNode
 
-# 快慢指针，慢指针1次1步，快指针1次2步，若链表有环形，则两个指针必定相遇
+# 快慢指针，慢指针1次1步，快指针1次2步，如果链表有环形，则两个指针必定相遇
 def test(head: ListNode):
     fast = slow = head
     while fast is not None and fast.next is not None:

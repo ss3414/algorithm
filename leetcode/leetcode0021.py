@@ -52,7 +52,7 @@ def test2(list1: ListNode, list2: ListNode):
             cursor.next = list2
             list2 = list2.next
         cursor = cursor.next
-    # 若list1/list2长度不一致，遍历剩下的链表插入cursor（原链表有序，剩下的一定大于cursor）
+    # 如果list1/list2长度不一致，遍历剩下的链表插入cursor（原链表有序，剩下的一定大于cursor）
     cursor.next = list1 or list2
     return temp.next
 

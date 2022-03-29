@@ -6,7 +6,6 @@
 
 list = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 for i in range(len(list) - 1):  # 外层循环位置
-    min = list[i]
     for j in range(i + 1, len(list)):  # 内层循环要比较的次数
         temp = list[j]
         if list[j] < list[i]:

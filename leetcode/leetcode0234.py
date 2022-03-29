@@ -6,7 +6,7 @@ import copy
 
 from common import ListNode
 
-# 反转链表再比较，时间复杂度太高
+# 反转链表再比较（超时）
 def test(head: ListNode):
     cursor = copy.deepcopy(head)  # 深拷贝
     reverse = None
@@ -23,7 +23,7 @@ def test(head: ListNode):
         reverse = reverse.next
     return True
 
-# 链表前半段入栈与后半段比较，时间复杂度太高
+# 链表前半段入栈与后半段比较（超时）
 def test2(head: ListNode):
     cursor = copy.deepcopy(head)
     length = 0
