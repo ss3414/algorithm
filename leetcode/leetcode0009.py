@@ -2,7 +2,7 @@
 # todo 0009（Palindrome Number）
 # 回文数
 
-# 转换成字符串
+# 字符串
 def test(x):
     if x < 0:
         return False
@@ -15,7 +15,7 @@ def test(x):
         i += 1
     return True
 
-# 不转换成字符串
+# 数学
 def test2(x):
     if x < 0:
         return False

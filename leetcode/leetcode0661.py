@@ -16,7 +16,7 @@ class Solution:
                 count = 0
                 for i in range(-1, 2):
                     for j in range(-1, 2):
-                        if x + i >= 0 and x + i < r and y + j >= 0 and y + j < c:
+                        if 0 <= x + i < r and 0 <= y + j < c:
                             try:
                                 average += img[x + i][y + j]
                                 count += 1

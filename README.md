@@ -23,7 +23,6 @@ bucket：桶排序<br>
 radix：基数排序<br>
 
 # archive（归档）
-recursion（递归）<br>
 untitled（未分类）<br>
 
 ******************************************************************************************
@@ -69,6 +68,8 @@ leetcode0160（Intersection of Two Linked Lists）<br>
 leetcode0168（Excel Sheet Column Title）<br>
 leetcode0169（Majority Element）<br>
 leetcode0171（Excel Sheet Column Number）<br>
+leetcode0190（Reverse Bits）<br>
+leetcode0191（Number of 1 Bits）<br>
 leetcode0202（Happy Number）<br>
 leetcode0203（Remove Linked List Elements）<br>
 leetcode0205（Isomorphic Strings）<br>
@@ -86,31 +87,69 @@ leetcode0237（Delete Node in a Linked List）<br>
 leetcode0242（Valid Anagram）<br>
 leetcode0257（Binary Tree Paths）<br>
 leetcode0258（Add Digits）<br>
+leetcode0263（Ugly Number）<br>
 leetcode0268（Missing Number）<br>
+leetcode0278（First Bad Version）<br>
+leetcode0283（Move Zeroes）<br>
 leetcode0290（Word Pattern）<br>
+leetcode0303（Range Sum Query - Immutable）<br>
 leetcode0326（Power of Three）<br>
 leetcode0338（Counting Bits）<br>
 leetcode0342（Power of Four）<br>
 leetcode0344（Reverse String）<br>
+leetcode0345（Reverse Vowels of a String）<br>
 leetcode0349（Intersection of Two Arrays）<br>
 leetcode0350（Intersection of Two Arrays II）<br>
+leetcode0367（Valid Perfect Square）<br>
+leetcode0374（Guess Number Higher or Lower）<br>
+leetcode0383（Ransom Note）<br>
+leetcode0387（First Unique Character in a String）<br>
 leetcode0389（Find the Difference）<br>
 leetcode0392（Is Subsequence）<br>
+leetcode0401（Binary Watch）<br>
 leetcode0404（Sum of Left Leaves）<br>
+leetcode0405（Convert a Number to Hexadecimal）<br>
+leetcode0409（Longest Palindrome）<br>
 leetcode0412（Fizz Buzz）<br>
+leetcode0414（Third Maximum Number）<br>
 leetcode0415（Add Strings）<br>
+leetcode0434（Number of Segments in a String）<br>
+leetcode0441（Arranging Coins）<br>
+leetcode0448（Find All Numbers Disappeared in an Array）<br>
+leetcode0455（Assign Cookies）<br>
 leetcode0459（Repeated Substring Pattern）<br>
+leetcode0461（Hamming Distance）<br>
 leetcode0463（Island Perimeter）<br>
+leetcode0476（Number Complement）<br>
+leetcode0482（License Key Formatting）<br>
+leetcode0485（Max Consecutive Ones）<br>
+leetcode0492（Construct the Rectangle）<br>
 leetcode0495（Teemo Attacking）<br>
 leetcode0496（Next Greater Element I）<br>
+leetcode0500（Keyboard Row）<br>
 leetcode0501（Find Mode in Binary Search Tree）<br>
+leetcode0504（Base 7）<br>
 leetcode0506（Relative Ranks）<br>
+leetcode0507（Perfect Number）<br>
+leetcode0509（Fibonacci Number）<br>
+leetcode0520（Detect Capital）<br>
+leetcode0521（Longest Uncommon Subsequence I）<br>
 leetcode0530（Minimum Absolute Difference in BST）<br>
+leetcode0541（Reverse String II）<br>
+leetcode0543（Diameter of Binary Tree）<br>
+leetcode0551（Student Attendance Record I）<br>
+leetcode0557（Reverse Words in a String III）<br>
 leetcode0559（Maximum Depth of N-ary Tree）<br>
 leetcode0561（Array Partition I）<br>
+leetcode0563（Binary Tree Tilt）<br>
 leetcode0566（Reshape the Matrix）<br>
+leetcode0572（Subtree of Another Tree）<br>
+leetcode0575（Distribute Candies）<br>
 leetcode0589（N-ary Tree Preorder Traversal）<br>
 leetcode0590（N-ary Tree Postorder Traversal）<br>
+leetcode0594（Longest Harmonious Subsequence）<br>
+leetcode0598（Range Addition II）<br>
+leetcode0605（Can Place Flowers）<br>
 leetcode0617（Merge Two Binary Trees）<br>
 leetcode0637（Average of Levels in Binary Tree）<br>
 leetcode0653（Two Sum IV - Input is a BST）<br>

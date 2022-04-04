@@ -42,4 +42,5 @@ class Solution:
 # print(Solution().repeatedSubstringPattern("abaaabaa"))
 # print(Solution().repeatedSubstringPattern("abcde"))
 # print(Solution().repeatedSubstringPattern("abaababaab"))
+
 print(Solution().repeatedSubstringPattern2("abaababaab"))

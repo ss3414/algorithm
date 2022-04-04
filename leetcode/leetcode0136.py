@@ -14,7 +14,6 @@ class Solution:
     # 哈希表（时间慢，空间小）
     def singleNumber2(self, nums: list) -> int:
         data = {}
-        result = 0
         for num in nums:
             if num in data.keys():
                 data.update({num: data[num] + 1})

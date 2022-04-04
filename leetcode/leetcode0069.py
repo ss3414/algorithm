@@ -18,5 +18,5 @@ def test(x: int):
         print("left:{left} right:{right} middle:{middle}".format(left=left, right=right, middle=middle))
     return left
 
-# print(test(9))
-print(test(1))
+print(test(9))
+# print(test(1))

@@ -4,6 +4,7 @@
 
 from common import TreeNode
 
+# DFS
 class Solution:
     # 只计算了相邻节点的差
     def getMinimumDifference(self, root: TreeNode) -> int:

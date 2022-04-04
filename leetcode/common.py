@@ -40,7 +40,6 @@ def tree2array(root: TreeNode):
         test(root.left, nodes)
         test(root.right, nodes)
 
-    nodes = []
-    nodes.append(root.val if root else None)
+    nodes = [root.val if root else None]
     test(root, nodes)
     return nodes

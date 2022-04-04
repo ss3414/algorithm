@@ -4,7 +4,7 @@
 # 如何在原字符串前添加字符，使其成为回文字符串
 
 class Solution:
-    # 暴力算法（超时）
+    # 暴力（超时）
     def shortestPalindrome(self, s: str) -> str:
         l = len(s)
         m = l // 2

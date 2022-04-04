@@ -3,7 +3,7 @@
 # 相对排名
 
 class Solution:
-    # 使用堆而非构建堆
+    # 堆
     def findRelativeRanks(self, score: list) -> list:
         from queue import PriorityQueue
         result = [None] * len(score)

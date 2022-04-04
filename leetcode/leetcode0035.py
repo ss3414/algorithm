@@ -4,6 +4,7 @@
 
 import bisect
 
+# 暴力
 def test(nums: list, target: int):
     i = 0
     while i < len(nums) - 1:
@@ -18,7 +19,7 @@ def test(nums: list, target: int):
     else:
         return len(nums)  # 比所有元素大
 
-# test1的简化
+# test1的简化版
 def test2(nums: list, target: int):
     i = 0
     while i < len(nums):
@@ -64,6 +65,6 @@ def test5(nums: list, target: int):
 # print(test3([1,3,5,7],3))
 # print(test3([1,3,5,7],0))
 # print(test3([1,3,5,7],9))
-
 # print(test4([1,3,5,7],3))
+
 print(test5([1, 3, 5, 7], 3))

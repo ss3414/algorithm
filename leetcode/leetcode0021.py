@@ -5,7 +5,7 @@
 from common import ListNode
 from common import linkedlist2str
 
-# 把链表节点打散冒泡排序，时间复杂度太高
+# 冒泡（超时）
 def test(list1: ListNode, list2: ListNode):
     sorts = []
     if list1 is not None:

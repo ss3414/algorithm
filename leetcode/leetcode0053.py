@@ -2,7 +2,7 @@
 # todo 0053（Maximum Subarray）
 # 最大子数组的和，子数组必须连续
 
-# 暴力算法（超时）
+# 暴力（超时）
 def test(nums: list):
     max = -10000
     length = 1  # 子数组的长度

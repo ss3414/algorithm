@@ -2,28 +2,28 @@
 # todo 0067（Add Binary）
 # 二进制求和
 
-# 池沼算法
+# 数组
 def test(a: str, b: str):
-    sum = str(int(a) + int(b))
+    sum = list(str(int(a) + int(b)))
     i = len(sum) - 1
     while i > 0:
         if sum[i] == "2":
-            sum[i] = "0"  # Python无法直接替换字符串下标
+            sum[i] = "0"
             sum[i - 1] = str(int(sum[i - 1]) + 1)
         if sum[i] == "3":
             sum[i] = "1"
             sum[i - 1] = str(int(sum[i - 1]) + 1)
-        print(sum[i])
+        # print(sum[i])
         i -= 1
     if sum[0] == "2":
         sum[i] = "0"
-        return "1" + sum
+        return "1" + "".join(sum)
     if sum[0] == "3":
         sum[i] = "1"
-        return "1" + sum
-    return sum
+        return "1" + "".join(sum)
+    return "".join(sum)
 
-# fixme
+# fixme 数学
 def test2(a: str, b: str):
     length1, length2 = -len(a), -len(b)
     i, carry, result = -1, 0, ""  # carry是每位数的进位
@@ -36,5 +36,5 @@ def test2(a: str, b: str):
         i -= 1
     return "1" + result if carry else result
 
-# print(test("111","111"))
+# print(test("111", "111"))
 print(test2("111", "111"))

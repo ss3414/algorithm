@@ -21,6 +21,5 @@ def test(p: TreeNode, q: TreeNode, flag: bool):
     return flag
 
 p = TreeNode(1, left=TreeNode(2), right=TreeNode(3))
-# q=TreeNode(1,left=TreeNode(3),right=TreeNode(2))
 q = TreeNode(1, left=TreeNode(3), right=None)
 print(test(p, q, True))

@@ -7,7 +7,7 @@ from common import tree2array
 
 # 栈
 class Solution:
-    # 只能翻转满二叉树
+    # 池沼算法（只能翻转满二叉树）
     def invertTree(self, root: TreeNode) -> TreeNode:
         if root is None:
             return root

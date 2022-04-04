@@ -2,7 +2,7 @@
 # todo 0001（Two Sum）
 # 给定一个数组一个target，求数组中和等于target的两数坐标
 
-# 暴力算法（超时）
+# 暴力（超时）
 def test(nums: list, target: int) -> list:
     i = 0
     while i < len(nums):
