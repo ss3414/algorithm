@@ -5,24 +5,24 @@
 from common import ListNode
 from common import linkedlist2str
 
-# 时间复杂度太高
+# 太慢
 def test(head: ListNode):
     if head is None:
         return None
 
-    # temps=[ListNode(head.val,None)]  # LeetCode环境不能调用ListNode()新建节点
-    temps = [head]
+    # temp=[ListNode(head.val,None)]  # LeetCode环境不能调用ListNode()新建节点
+    temp = [head]
     while head.next is not None:
         if head.val != head.next.val:
             # output.next=ListNode(head.next.val,None)
-            temps.append(head.next)
+            temp.append(head.next)
         head = head.next
-    temps[len(temps) - 1].next = None  # 把最后一个元素的next置空
+    temp[len(temp) - 1].next = None  # 把最后一个元素的next置空
     i = 0
-    while i < len(temps) - 1:
-        temps[i].next = temps[i + 1]
+    while i < len(temp) - 1:
+        temp[i].next = temp[i + 1]
         i += 1
-    return temps[0]
+    return temp[0]
 
 # 链表从逻辑上是一个节点指向一个节点，从代码上是一个节点嵌套一个节点
 def test2(head):

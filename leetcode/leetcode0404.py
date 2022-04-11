@@ -5,6 +5,7 @@
 from common import TreeNode
 
 class Solution:
+    # DFS
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
         def test(root: TreeNode, flag: bool):
             if root is None:

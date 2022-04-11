@@ -19,7 +19,7 @@ def test(nums: list, target: int):
     else:
         return len(nums)  # 比所有元素大
 
-# test1的简化版
+# test的简化版
 def test2(nums: list, target: int):
     i = 0
     while i < len(nums):

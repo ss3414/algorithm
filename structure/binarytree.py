@@ -12,13 +12,13 @@ class Node:
         self.data = data
 
 # 构建二叉树
-def build(index: int, inputs: list):
-    tree_node = Node(inputs[index])
+def build(index: int, input: list):
+    tree_node = Node(input[index])
     try:
-        if inputs[2 * index + 1] is not None:
-            tree_node.left_child = build(2 * index + 1, inputs)
-        if inputs[2 * index + 2] is not None:
-            tree_node.right_child = build(2 * index + 2, inputs)
+        if input[2 * index + 1] is not None:
+            tree_node.left_child = build(2 * index + 1, input)
+        if input[2 * index + 2] is not None:
+            tree_node.right_child = build(2 * index + 2, input)
         return tree_node
     except Exception:
         return tree_node
@@ -73,8 +73,8 @@ def level_order_traversal(root: Node):
             input_queue.put(output_node.right_child)
 
 # 构建二叉树
-tests = [1, 2, 3, 4, 5, 6, 7]
-binary_tree = build(0, tests)
+test = [1, 2, 3, 4, 5, 6, 7]
+binary_tree = build(0, test)
 # output(binary_tree)
 
 # 深度优先遍历

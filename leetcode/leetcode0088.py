@@ -10,24 +10,24 @@ def test(nums1: list, m: int, nums2: list, n: int):
     if n == 0:
         return nums1
 
-    temps = [0] * (m + n)
+    temp = [0] * (m + n)
     i, j, k = 0, 0, 0
     while i < m + n:
         if j == m:  # nums1已迭代完，直接把nums2剩余部分加上
-            temps[i] = nums2[k]
+            temp[i] = nums2[k]
             k += 1
         elif k == n:  # nums2已迭代完，nums1剩余加上
-            temps[i] = nums1[j]
+            temp[i] = nums1[j]
             j += 1
         elif nums1[j] < nums2[k]:
-            temps[i] = nums1[j]
+            temp[i] = nums1[j]
             j += 1
         elif nums1[j] >= nums2[k]:
-            temps[i] = nums2[k]
+            temp[i] = nums2[k]
             k += 1
-        # print("temps:{temps} j:{j} k:{k}".format(temps=temps,j=j,k=k))
+        # print("temp:{temp} j:{j} k:{k}".format(temp=temp,j=j,k=k))
         i += 1
-    nums1 = temps
+    nums1 = temp
     return nums1
 
 # 从末端开始比较，大数往后挪

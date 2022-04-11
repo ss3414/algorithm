@@ -5,6 +5,7 @@
 from common import TreeNode
 
 class Solution:
+    # DFS
     def binaryTreePaths(self, root: TreeNode) -> list:
         def test(root: TreeNode, path: str, paths: list):
             if root.left is None and root.right is None:  # 叶子节点

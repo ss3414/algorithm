@@ -44,7 +44,7 @@ def test2(head: ListNode):
         i += 1
     return True
 
-# 链表整体入栈再比较，链表整体入栈再出栈相当于反转链表（能通过AC，但时间复杂度太高）
+# 链表整体入栈再比较，链表整体入栈再出栈相当于反转链表（慢）
 def test3(head: ListNode):
     cursor = copy.deepcopy(head)
     stack = []

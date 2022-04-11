@@ -3,7 +3,7 @@
 # 下一个更大元素
 
 class Solution:
-    # 嵌套循环，时间复杂度太高
+    # 嵌套循环（慢）
     def nextGreaterElement(self, nums1: list, nums2: list) -> list:
         result = [-1] * len(nums1)
         i = 0

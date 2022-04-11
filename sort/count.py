@@ -1,32 +1,29 @@
 # ****************************************************************分割线****************************************************************
 # todo 计数排序
 
-# 时间复杂度：最坏O(n+k)，最好O(n+k)
-# 元素必须为整数
-# 适合元素多/范围窄的数组
+def count(input):
+    max = input[0]
+    min = input[0]
+    for i in input:
+        if i >= max:
+            max = i
+        if i <= min:
+            min = i
+    temp = [0] * (max - min + 1)  # 1~9
 
-list = [9, 9, 7, 7, 5, 5, 3, 3, 1]
+    for i in input:
+        temp[i - min] += 1  # i - min是元素在temp中的位置
 
-max = list[0]
-min = list[0]
-for i in list:
-    if i >= max:
-        max = i
-    if i <= min:
-        min = i
-count = [0] * (max - min + 1)  # 1~9
+    output = []
+    i = 0
+    while i < len(temp):
+        if temp[i] != 0:
+            j = 0
+            while j < temp[i]:
+                output.append(i + min)
+                j += 1
+        i += 1
+    return output
 
-for i in list:
-    count[i - min] += 1  # i - min是元素在count中的位置
-
-output = []
-i = 0
-while i < len(count):
-    if count[i] != 0:
-        j = 0
-        while j < count[i]:
-            output.append(i + min)
-            j += 1
-    i += 1
-
-print(output)
+test = [9, 9, 7, 7, 5, 5, 3, 3, 1]
+print(count(test))

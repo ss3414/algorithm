@@ -33,9 +33,10 @@
 # 列表/字符串索引
 # s="abcd"
 # print(s[-2:])  # 倒数两位
+# print(s[0:4:2])  # [start:end:step]
 # print(s[2::])  # 第二到末尾
-# print(s[::-1])  # 逆序
 # print(s[::2])  # 奇数位
+# print(s[::-1])  # 逆序
 
 # ************************************************************半分割线******************************
 
@@ -77,17 +78,17 @@
 
 # 优先队列（堆实现）
 # from queue import PriorityQueue
-# tests=PriorityQueue()
-# tests.put(2)
-# tests.put(1)
-# tests.put(3)
-# while not tests.empty():
-#     print(tests.get())
+# test=PriorityQueue()
+# test.put(2)
+# test.put(1)
+# test.put(3)
+# while not test.empty():
+#     print(test.get())
 
 # 堆
 # import heapq
-# tests=[2,1,3]
-# heapq.heapify(tests)
-# heapq.heappush(tests,0)
-# while tests:
-#     print(heapq.heappop(tests))
+# test=[2,1,3]
+# heapq.heapify(test)
+# heapq.heappush(test,0)
+# while test:
+#     print(heapq.heappop(test))

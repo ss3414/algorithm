@@ -5,10 +5,10 @@
 class Solution:
     def heightChecker(self, heights: list) -> int:
         count = 0
-        temps = sorted(heights)
+        temp = sorted(heights)
         i = 0
         while i < len(heights):
-            if heights[i] != temps[i]:
+            if heights[i] != temp[i]:
                 count += 1
             i += 1
         return count

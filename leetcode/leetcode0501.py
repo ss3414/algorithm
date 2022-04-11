@@ -22,8 +22,8 @@ class Solution:
         test(root, data)
         max_val = max(data.values())
         result = []
-        for key, value in data.items():
-            if value == max_val:
+        for key, val in data.items():
+            if val == max_val:
                 result.append(key)
         return result
 

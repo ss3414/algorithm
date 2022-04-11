@@ -7,6 +7,7 @@ from collections import deque
 from common import TreeNode
 
 class Solution:
+    # 池沼算法
     def averageOfLevels(self, root: TreeNode) -> list:
         # BFS将二叉树转数组有问题，None未加入数组
         nodes = []
@@ -36,6 +37,7 @@ class Solution:
             between *= 2
         return output
 
+    # BFS
     def averageOfLevels2(self, root: TreeNode) -> list:
         output = []
         if not root:

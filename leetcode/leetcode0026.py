@@ -2,7 +2,7 @@
 # todo 0026（Remove Duplicates from Sorted Array）
 # 删除有序数组中的重复数，返回有多少个不相同的数
 
-# 哈希表（题目要求只允许对输入数组进行操作，不允许新建其他数据结构）
+# 哈希表
 def test(nums: list):
     data = {}
     i = 0
@@ -36,7 +36,7 @@ def test2(nums: list):
     print(nums)
     return result
 
-tests = [1, 1, 2, 2, 3, 3]  # 输入数组是有序的
-# print(test(tests))
+test = [1, 1, 2, 2, 3, 3]  # 输入数组是有序的
+# print(test(test))
 
-print(test2(tests))
+print(test2(test))

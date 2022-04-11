@@ -32,8 +32,8 @@ def test2(nums: list, target: int) -> list:
         j += 1
     return []
 
-tests = [2, 7, 11, 15]
+test = [2, 7, 11, 15]
 target = 9
-# print(test(tests, target))
+# print(test(test, target))
 
-print(test2(tests, target))
+print(test2(test, target))

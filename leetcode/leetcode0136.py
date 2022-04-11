@@ -4,14 +4,14 @@
 # 要求线性时间，常数空间
 
 class Solution:
-    # 位运算（时间快，空间大）
+    # 位运算（快）
     def singleNumber(self, nums: list) -> int:
         result = 0
         for num in nums:
             result ^= num
         return result
 
-    # 哈希表（时间慢，空间小）
+    # 哈希表（慢）
     def singleNumber2(self, nums: list) -> int:
         data = {}
         for num in nums:

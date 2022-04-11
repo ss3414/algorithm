@@ -68,6 +68,9 @@ leetcode0160（Intersection of Two Linked Lists）<br>
 leetcode0168（Excel Sheet Column Title）<br>
 leetcode0169（Majority Element）<br>
 leetcode0171（Excel Sheet Column Number）<br>
+leetcode0175（Combine Two Tables）<br>
+leetcode0181（Employees Earning More Than Their Managers）<br>
+leetcode0182（Duplicate Emails）<br>
 leetcode0190（Reverse Bits）<br>
 leetcode0191（Number of 1 Bits）<br>
 leetcode0202（Happy Number）<br>
@@ -152,25 +155,42 @@ leetcode0598（Range Addition II）<br>
 leetcode0605（Can Place Flowers）<br>
 leetcode0617（Merge Two Binary Trees）<br>
 leetcode0637（Average of Levels in Binary Tree）<br>
+leetcode0643（Maximum Average Subarray I）<br>
 leetcode0653（Two Sum IV - Input is a BST）<br>
 leetcode0661（Image Smoother）<br>
 leetcode0703（Kth Largest Element in a Stream）<br>
 leetcode0705（Design HashSet）<br>
 leetcode0706（Design HashMap）<br>
 leetcode0746（Min Cost Climbing Stairs）<br>
+leetcode0812（Largest Triangle Area）<br>
+leetcode0836（Rectangle Overlap）<br>
 leetcode0876（Middle of the Linked List）<br>
+leetcode0914（X of a Kind in a Deck of Cards）<br>
 leetcode1025（Divisor Game）<br>
+leetcode1037（Valid Boomerang）<br>
 leetcode1051（Height Checker）<br>
 leetcode1137（N-th Tribonacci Number）<br>
+leetcode1232（Check If It Is a Straight Line）<br>
+leetcode1266（Minimum Time Visiting All Points）<br>
 leetcode1290（Convert Binary Number in a Linked List to Integer）<br>
 leetcode1534（Count Good Triplets）<br>
 leetcode1566（Detect Pattern of Length M Repeated K or More Times）<br>
+leetcode1863（Sum of All Subset XOR Totals）<br>
+leetcode1979（Find Greatest Common Divisor of Array）<br>
 
 ## 中等
+leetcode0062（Unique Paths）<br>
 leetcode0075（Sort Colors）<br>
 leetcode0102（Binary Tree Level Order Traversal）<br>
 leetcode0107（Binary Tree Level Order Traversal II）<br>
+leetcode0204（Count Primes）<br>
 leetcode0429（N-ary Tree Level Order Traversal）<br>
+leetcode0470（Implement Rand10() Using Rand7()）<br>
+leetcode1201（Ugly Number III）<br>
+leetcode1447（Simplified Fractions）<br>
+leetcode2063（Vowels of All Substrings）<br>
+leetcode2221（Find Triangular Sum of an Array）<br>
 
 ## 困难
+leetcode0164（Maximum Gap）<br>
 leetcode0214（Shortest Palindrome）<br>

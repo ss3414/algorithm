@@ -14,8 +14,8 @@ def test(nums: list):
             count += 1
             data.update({nums[i]: count})
         i += 1
-    for key, value in data.items():
-        if value == max(data.values()):
+    for key, val in data.items():
+        if val == max(data.values()):
             return key
 
 # 数学极值思想，众数元素占一半以上，最差情况n+1个众数，n个其他数，两两相抵至少有一个众数

@@ -5,7 +5,7 @@
 from common import ListNode
 from common import linkedlist2str
 
-# 时间复杂度太高
+# 太慢
 def test(head: ListNode):
     nodes = []
     cursor = head

@@ -24,7 +24,7 @@ class Solution:
         return result
 
     # 数学
-    def convertToBase72(self, num: int) -> str:
+    def convertToBase7_2(self, num: int) -> str:
         n, result = abs(num), ""
         while n:
             result = str(n % 7) + result
@@ -33,4 +33,4 @@ class Solution:
         return "-" * (num < 0) + result or "0"
 
 # print(Solution().convertToBase7(-7))
-print(Solution().convertToBase72(-70))
+print(Solution().convertToBase7_2(-70))

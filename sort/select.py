@@ -1,16 +1,18 @@
 # ****************************************************************分割线****************************************************************
 # todo 选择排序
 
-# 时间复杂度：最坏O(n^2)，最好O(n^2)，不稳定（值相同的元素在排序后顺序是否改变）
 # 外层需要循环n-1次，每次至多需要比较n-1次，至多需要移动1个元素
 
-list = [9, 8, 7, 6, 5, 4, 3, 2, 1]
-for i in range(len(list) - 1):  # 外层循环位置
-    for j in range(i + 1, len(list)):  # 内层循环要比较的次数
-        temp = list[j]
-        if list[j] < list[i]:
-            temp = list[i]
-            list[i] = list[j]
-            list[j] = temp
-            # print(list)
-print(list)
+def select(input):
+    for i in range(len(input) - 1):  # 外层循环位置
+        for j in range(i + 1, len(input)):  # 内层循环要比较的次数
+            temp = input[j]
+            if input[j] < input[i]:
+                temp = input[i]
+                input[i] = input[j]
+                input[j] = temp
+                # print(input)
+    return input
+
+test = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+print(select(test))

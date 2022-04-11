@@ -4,29 +4,6 @@
 
 from common import TreeNode
 
-def test(root: TreeNode, depth: int, diffs: list):
-    if root is None:  # 叶子节点，直接返回长度
-        return depth
-    left_depth = test(root.left, depth + 1, diffs)
-    right_depth = test(root.right, depth + 1, diffs)
-    print("root:{root} left:{left} right:{right}".format(root=root.val, left=left_depth, right=right_depth))
-    diffs.append(abs(left_depth - right_depth))
-    # if abs(left_depth-right_depth)>1:  # 无法翻转全局flag
-    #     flag=False
-    return max(left_depth, right_depth)  # 非叶子节点，返回左右最长子树长度
-
-# DFS（LeetCode无法AC）
-def test2(root: TreeNode):
-    diffs = []
-    test(root, 0, diffs)
-    return max(diffs) <= 1
-
-left = TreeNode(2, left=TreeNode(4, left=TreeNode(6)), right=TreeNode(5))
-right = TreeNode(3)
-root = TreeNode(1, left=left, right=right)
-
-# print(test2(root))
-
 class Solution:
     # DFS+双层递归
     def isBalanced(self, root: TreeNode) -> bool:
@@ -68,5 +45,8 @@ class Solution:
         else:
             return True
 
+left = TreeNode(2, left=TreeNode(4, left=TreeNode(6)), right=TreeNode(5))
+right = TreeNode(3)
+root = TreeNode(1, left=left, right=right)
 # print(Solution().isBalanced(root))
 print(Solution().isBalanced2(root))
