@@ -11,7 +11,7 @@ def test(root: TreeNode, result: list):
     if root.left is not None:
         print("direction:{direction} node:{node}".format(direction="左", node=root.left.val))
         test(root.left, result)
-    # 递归查询左子节点，直到没有左子节点时，输出当前节点
+    # 递归搜索左子节点，直到没有左子节点时，输出当前节点
     result.append(root.val)
     if root.right is not None:
         print("direction:{direction} node:{node}".format(direction="右", node=root.right.val))

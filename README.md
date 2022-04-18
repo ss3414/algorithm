@@ -30,6 +30,7 @@ untitled（未分类）<br>
 # leetcode
 ## 简单
 leetcode0001（Two Sum）<br>
+leetcode0003（Longest Substring Without Repeating Characters）<br>
 leetcode0009（Palindrome Number）<br>
 leetcode0013（Roman to Integer）<br>
 leetcode0014（Longest Common Prefix）<br>
@@ -71,8 +72,10 @@ leetcode0171（Excel Sheet Column Number）<br>
 leetcode0175（Combine Two Tables）<br>
 leetcode0181（Employees Earning More Than Their Managers）<br>
 leetcode0182（Duplicate Emails）<br>
+leetcode0183（Customers Who Never Order）<br>
 leetcode0190（Reverse Bits）<br>
 leetcode0191（Number of 1 Bits）<br>
+leetcode0196（Delete Duplicate Emails）<br>
 leetcode0202（Happy Number）<br>
 leetcode0203（Remove Linked List Elements）<br>
 leetcode0205（Isomorphic Strings）<br>
@@ -161,8 +164,10 @@ leetcode0661（Image Smoother）<br>
 leetcode0703（Kth Largest Element in a Stream）<br>
 leetcode0705（Design HashSet）<br>
 leetcode0706（Design HashMap）<br>
+leetcode0724（Find Pivot Index）<br>
 leetcode0746（Min Cost Climbing Stairs）<br>
 leetcode0812（Largest Triangle Area）<br>
+leetcode0819（Most Common Word）<br>
 leetcode0836（Rectangle Overlap）<br>
 leetcode0876（Middle of the Linked List）<br>
 leetcode0914（X of a Kind in a Deck of Cards）<br>
@@ -170,23 +175,54 @@ leetcode1025（Divisor Game）<br>
 leetcode1037（Valid Boomerang）<br>
 leetcode1051（Height Checker）<br>
 leetcode1137（N-th Tribonacci Number）<br>
+leetcode1189（Maximum Number of Balloons）<br>
+leetcode1221（Split a String in Balanced Strings）<br>
 leetcode1232（Check If It Is a Straight Line）<br>
 leetcode1266（Minimum Time Visiting All Points）<br>
 leetcode1290（Convert Binary Number in a Linked List to Integer）<br>
+leetcode1394（Find Lucky Integer in an Array）<br>
+leetcode1413（Minimum Value to Get Positive Step by Step Sum）<br>
+leetcode1480（Running Sum of 1d Array）<br>
+leetcode1512（Number of Good Pairs）<br>
 leetcode1534（Count Good Triplets）<br>
 leetcode1566（Detect Pattern of Length M Repeated K or More Times）<br>
+leetcode1588（Sum of All Odd Length Subarrays）<br>
+leetcode1603（Design Parking System）<br>
+leetcode1704（Determine if String Halves Are Alike）<br>
+leetcode1732（Find the Highest Altitude）<br>
+leetcode1742（Maximum Number of Balls in a Box）<br>
+leetcode1790（Check if One String Swap Can Make Strings Equal）<br>
 leetcode1863（Sum of All Subset XOR Totals）<br>
+leetcode1876（Substrings of Size Three with Distinct Characters）<br>
+leetcode1893（Check if All the Integers in a Range Are Covered）<br>
 leetcode1979（Find Greatest Common Divisor of Array）<br>
+leetcode1991（Find the Middle Index in Array）<br>
 
 ## 中等
 leetcode0062（Unique Paths）<br>
 leetcode0075（Sort Colors）<br>
 leetcode0102（Binary Tree Level Order Traversal）<br>
 leetcode0107（Binary Tree Level Order Traversal II）<br>
+leetcode0128（Longest Consecutive Sequence）<br>
+leetcode0130（Surrounded Regions）<br>
+leetcode0187（Repeated DNA Sequences）<br>
 leetcode0204（Count Primes）<br>
+leetcode0208（Implement Trie (Prefix Tree)）<br>
+leetcode0209（Minimum Size Subarray Sum）<br>
+leetcode0211（Design Add and Search Words Data Structure）<br>
+leetcode0220（Contains Duplicate III）<br>
+leetcode0307（Range Sum Query - Mutable）<br>
+leetcode0386（Lexicographical Numbers）<br>
 leetcode0429（N-ary Tree Level Order Traversal）<br>
 leetcode0470（Implement Rand10() Using Rand7()）<br>
+leetcode0648（Replace Words）<br>
+leetcode0676（Implement Magic Dictionary）<br>
+leetcode0677（Map Sum Pairs）<br>
+leetcode0713（Subarray Product Less Than K）<br>
+leetcode0720（Longest Word in Dictionary）<br>
 leetcode1201（Ugly Number III）<br>
+leetcode1233（Remove Sub-Folders from the Filesystem）<br>
+leetcode1268（Search Suggestions System）<br>
 leetcode1447（Simplified Fractions）<br>
 leetcode2063（Vowels of All Substrings）<br>
 leetcode2221（Find Triangular Sum of an Array）<br>
@@ -194,3 +230,4 @@ leetcode2221（Find Triangular Sum of an Array）<br>
 ## 困难
 leetcode0164（Maximum Gap）<br>
 leetcode0214（Shortest Palindrome）<br>
+leetcode0472（Concatenated Words）<br>

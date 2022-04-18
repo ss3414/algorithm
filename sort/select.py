@@ -6,7 +6,6 @@
 def select(input):
     for i in range(len(input) - 1):  # 外层循环位置
         for j in range(i + 1, len(input)):  # 内层循环要比较的次数
-            temp = input[j]
             if input[j] < input[i]:
                 temp = input[i]
                 input[i] = input[j]

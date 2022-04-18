@@ -33,6 +33,7 @@
 # 列表/字符串索引
 # s="abcd"
 # print(s[-2:])  # 倒数两位
+# print(s[:-2])  # 不包含倒数两位
 # print(s[0:4:2])  # [start:end:step]
 # print(s[2::])  # 第二到末尾
 # print(s[::2])  # 奇数位
