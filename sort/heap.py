@@ -1,38 +1,41 @@
 # ****************************************************************分割线****************************************************************
 # todo 堆排序
 
-# 时间复杂度：最坏O(nlogn)，最好O(nlogn)，不稳定
 # 利用堆实现的排序
 
-def down(list, parent, length):
-    temp = list[parent]
+def down(input, parent, length):
+    temp = input[parent]
     child = 2 * parent + 1
     while child < length:
-        if child + 1 < length and list[child + 1] < list[child]:
+        if child + 1 < length and input[child + 1] < input[child]:
             child += 1
-        if temp < list[child]:
+        if temp < input[child]:
             break
-        list[parent] = list[child]
+        input[parent] = input[child]
         parent = child
         child = 2 * child + 1
-    list[parent] = temp
+    input[parent] = temp
 
-def build(list):
-    i = (len(list) - 2) // 2
+def build(input):
+    i = (len(input) - 2) // 2
     while i >= 0:
-        down(list, i, len(list))
+        down(input, i, len(input))
         i -= 1
 
-def sort(list):
-    i = len(list) - 1
+# 将堆顶取出放到数组末尾，对截取后的数组重新构建最小堆，再重复此步骤
+def sort(input):
+    i = len(input) - 1
     while i >= 0:
-        temp = list[i]
-        list[i] = list[0]
-        list[0] = temp
-        down(list, i, len(list))
+        temp = input[i]
+        input[i] = input[0]
+        input[0] = temp
+        print("{i}:{h}".format(i=i,h=input))
+        down(input, 0, i)
+        print("{i}:{h}".format(i=i,h=input))
         i -= 1
 
-list = [9, 8, 7, 6, 5, 4, 3, 2, 1]
-build(list)  # 构建最小堆
-sort(list)
-print(list)
+test = [5, 4, 3, 2, 1]
+build(test)  # 构建最小堆
+print(test)
+sort(test)
+print(test)

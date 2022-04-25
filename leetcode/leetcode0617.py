@@ -13,7 +13,7 @@ class Solution:
         def test(root: TreeNode):
             output = []
             queue = deque([root])
-            while len(queue) > 0:
+            while queue:
                 node = queue.popleft()
                 output.append(node)
                 if node and (node.left or node.right):
@@ -51,7 +51,7 @@ class Solution:
             j += 1
         return result[0]
 
-    # fixme 递归
+    # 递归
     def mergeTrees2(self, root1: TreeNode, root2: TreeNode) -> TreeNode:
         if not root1:
             return root2

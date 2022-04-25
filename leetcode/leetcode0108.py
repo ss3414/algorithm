@@ -5,5 +5,18 @@
 from common import TreeNode
 
 class Solution:
+    # 二分法+递归
     def sortedArrayToBST(self, nums: list) -> TreeNode:
-        pass
+        def test(nums, left, right):
+            if left > right:
+                return None
+            middle = left + (right - left) // 2
+            root = TreeNode(nums[middle])
+            print(nums[middle])
+            root.left = test(nums, left, middle - 1)
+            root.right = test(nums, middle + 1, right)
+            return root
+
+        return test(nums, 0, len(nums) - 1)
+
+Solution().sortedArrayToBST([1, 2, 3, 4, 5, 6, 7])

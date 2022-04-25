@@ -59,7 +59,7 @@ def test3(head: ListNode):
 
 # 快慢指针
 def test4(head: ListNode):
-    fast = slow = head
+    slow = fast = head
     stack = [head.val]
     # 快指针走完时，慢指针走到中间，再用栈储存前半段比较后半段
     while fast.next and fast.next.next:

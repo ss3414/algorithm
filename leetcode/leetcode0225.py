@@ -19,7 +19,7 @@ class MyStack:
     def pop(self) -> int:
         return self.data.popleft()
 
-    def top(self) -> int:
+    def top(self):
         if len(self.data) > 0:
             return self.data[0]
         else:

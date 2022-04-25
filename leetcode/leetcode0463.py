@@ -5,7 +5,7 @@
 
 class Solution:
     # 池沼算法
-    def islandPerimeter(self, grid: list) -> int:
+    def islandPerimeter(self, grid: list):
         # 长宽
         row = len(grid)
         col = len(grid[0])

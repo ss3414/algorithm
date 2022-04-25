@@ -30,7 +30,7 @@
 # print(ord("a"))
 # print(chr(ord("a")+25))
 
-# 列表/字符串索引
+# 数组/字符串索引
 # s="abcd"
 # print(s[-2:])  # 倒数两位
 # print(s[:-2])  # 不包含倒数两位
@@ -64,13 +64,13 @@
 
 # ************************************************************半分割线******************************
 
-# 列表充当栈
+# 数组充当栈
 # stack=[1,2,3]
 # stack.append(4)
 # print(stack)
 # print(stack.pop())
 
-# 列表充当队列
+# 数组充当队列
 # from collections import deque
 # queue=deque([1,2,3])
 # queue.append(4)

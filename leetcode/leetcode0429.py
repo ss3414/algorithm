@@ -13,7 +13,7 @@ class Solution:
         if root is None:
             return result
         queue = deque([root])
-        while len(queue) > 0:
+        while queue:
             breadth = len(queue)  # 用宽度控制每层出队数量
             i = 0
             temp = []

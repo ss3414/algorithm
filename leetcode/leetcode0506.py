@@ -2,10 +2,11 @@
 # todo 0506（Relative Ranks）
 # 相对排名
 
+from queue import PriorityQueue
+
 class Solution:
     # 堆
     def findRelativeRanks(self, score: list) -> list:
-        from queue import PriorityQueue
         result = [None] * len(score)
         rank = 1
         # Python中优先队列使用堆实现

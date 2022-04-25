@@ -26,7 +26,7 @@ class Solution:
             return False
         data = set()
         queue = deque([root])
-        while len(queue) > 0:
+        while queue:
             node = queue.popleft()
             if (k - node.val) in data:
                 return True

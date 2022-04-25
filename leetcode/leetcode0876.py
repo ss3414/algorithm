@@ -6,7 +6,7 @@ from common import ListNode
 
 # 快慢指针
 def test(head: ListNode):
-    fast = slow = head
+    slow = fast = head
     while fast.next and fast.next.next:
         fast = fast.next.next
         slow = slow.next

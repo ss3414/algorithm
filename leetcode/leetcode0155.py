@@ -19,7 +19,7 @@ class MinStack:
             self.min.pop()
         self.data.pop()
 
-    def top(self) -> int:
+    def top(self):
         if len(self.data) > 0:
             temp = self.data.pop()  # 可以用data[-1]代替栈的top()方法
             self.data.append(temp)
@@ -28,7 +28,7 @@ class MinStack:
             return None
 
     # 相当于min的top()方法
-    def getMin(self) -> int:
+    def getMin(self):
         if len(self.min) > 0:
             temp = self.min.pop()
             self.min.append(temp)

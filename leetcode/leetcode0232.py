@@ -18,7 +18,7 @@ class MyQueue:
     def pop(self) -> int:
         return self.s1.pop()
 
-    def peek(self) -> int:
+    def peek(self):
         if len(self.s1) > 0:
             return self.s1[-1]
         else:

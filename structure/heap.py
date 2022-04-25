@@ -46,11 +46,11 @@ def up(input):
     input[child] = temp
 
 # 构建最小堆
-# test = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]  # 数组不能存在空元素
-# build(test)
-# print(test)
+test = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]  # 数组不能存在空元素
+build(test)
+print(test)
 
 # 上浮
-test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
-up(test)
-print(test)
+# test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+# up(test)
+# print(test)

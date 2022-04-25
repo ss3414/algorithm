@@ -12,7 +12,7 @@ class Solution:
         # BFS将二叉树转数组有问题，None未加入数组
         nodes = []
         queue = deque([root])
-        while len(queue) > 0:
+        while queue:
             node = queue.popleft()
             nodes.append(node.val if node else None)
             if node and (node.left or node.right):
@@ -43,7 +43,7 @@ class Solution:
         if not root:
             return output
         queue = deque([root])
-        while len(queue) > 0:
+        while queue:
             sum = 0
             count = len(queue)
             i = 0

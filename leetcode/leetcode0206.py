@@ -21,7 +21,7 @@ def test(head: ListNode):
         i -= 1
     return nodes[len(nodes) - 1]
 
-# 迭代
+# fixme 迭代
 def test2(head: ListNode):
     new = None
     while head:

@@ -6,7 +6,7 @@ import re
 
 class Solution:
     def mostCommonWord(self, paragraph: str, banned: list) -> str:
-        paragraph = re.sub("[!?',;\.]", " ", paragraph.lower())
+        paragraph = re.sub("[!?',;.]", " ", paragraph.lower())
         data = {}
         for i in paragraph.split(" "):
             if i in data.keys():
@@ -20,5 +20,5 @@ class Solution:
                 del data[ban]
         return max(data, key=data.get)
 
-# print(Solution().mostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.",["hit"]))
-print(Solution().mostCommonWord("a, a, a, a, b,b,b,c, c", ["a"]))
+print(Solution().mostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.", ["hit"]))
+# print(Solution().mostCommonWord("a, a, a, a, b,b,b,c, c", ["a"]))

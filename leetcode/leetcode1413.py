@@ -3,6 +3,7 @@
 # 逐步求和
 
 class Solution:
+    # 截取数组
     def minStartValue(self, nums: list) -> int:
         nums.insert(0, 0)
         result = nums[0] + nums[1]

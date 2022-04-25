@@ -29,8 +29,8 @@ class Solution:
         depth = 0
         if root is None:
             return depth
-        queue = deque([root])  # LeetCode中使用双端队列
-        while len(queue) > 0:
+        queue = deque([root])
+        while queue:
             depth += 1
             breadth = len(queue)
             i = 0
