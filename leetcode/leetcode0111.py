@@ -11,11 +11,11 @@ class Solution:
             if root is None:  # 根节点为空，深度为0
                 return depth
 
-            if root.left is not None and root.right is not None:  # 左右子树最小深度
+            if root.left and root.right:  # 左右子树最小深度
                 return min(test(root.left, depth + 1), test(root.right, depth + 1))
-            if root.left is not None and root.right is None:  # 左子树
+            if root.left and root.right is None:  # 左子树
                 return test(root.left, depth + 1)
-            if root.left is None and root.right is not None:  # 右子树
+            if root.left is None and root.right:  # 右子树
                 return test(root.right, depth + 1)
             if root.left is None and root.right is None:  # 叶子节点，返回深度
                 return depth + 1

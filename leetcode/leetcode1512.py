@@ -8,9 +8,9 @@ class Solution:
         data = {}
         for i in nums:
             if i in data.keys():
-                data.update({i: data[i] + 1})
+                data[i] = data[i] + 1
             else:
-                data.update({i: 1})
+                data[i] = 1
         for key, val in data.items():
             if val > 1:
                 result += int(0.5 * val * (val - 1))

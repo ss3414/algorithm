@@ -14,8 +14,8 @@ class Solution:
             words[i] += "@"  # 避免key/val重名
             if (pattern[i] in data.keys() and data[pattern[i]] != words[i]) or (words[i] in data.keys() and data[words[i]] != pattern[i]):
                 return False
-            data.update({pattern[i]: words[i]})
-            data.update({words[i]: pattern[i]})
+            data[pattern[i]] = words[i]
+            data[words[i]] = pattern[i]
             i += 1
         return True
 

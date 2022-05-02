@@ -54,7 +54,7 @@ class LinkedList:
     def output(self):
         temp_node = self.head
         str = ""
-        while temp_node is not None:
+        while temp_node:
             str += "{data}->".format(data=temp_node.data)
             temp_node = temp_node.next
         print(str)

@@ -15,9 +15,9 @@ class Node:
 def build(index: int, input: list):
     tree_node = Node(input[index])
     try:
-        if input[2 * index + 1] is not None:
+        if input[2 * index + 1]:
             tree_node.left_child = build(2 * index + 1, input)
-        if input[2 * index + 2] is not None:
+        if input[2 * index + 2]:
             tree_node.right_child = build(2 * index + 2, input)
         return tree_node
     except Exception:
@@ -25,14 +25,14 @@ def build(index: int, input: list):
 
 # 输出二叉树
 def output(node: Node):
-    if node.left_child is not None or node.right_child is not None:
+    if node.left_child or node.right_child:
         print("root:{root} left:{left} right:{right}".format(
             root=node.data,
             left=None if node.left_child is None else node.left_child.data,
             right=None if node.right_child is None else node.right_child.data))
-    if node.left_child is not None:
+    if node.left_child:
         output(node.left_child)
-    if node.right_child is not None:
+    if node.right_child:
         output(node.right_child)
 
 # 前序遍历（根/左/右）
@@ -67,9 +67,9 @@ def level_order_traversal(root: Node):
     while not input_queue.empty():
         output_node = input_queue.get()
         print(output_node.data)
-        if output_node.left_child is not None:
+        if output_node.left_child:
             input_queue.put(output_node.left_child)
-        if output_node.right_child is not None:
+        if output_node.right_child:
             input_queue.put(output_node.right_child)
 
 # 构建二叉树

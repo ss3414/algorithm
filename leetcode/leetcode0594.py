@@ -7,9 +7,9 @@ class Solution:
         data = {}
         for num in nums:
             if num in data.keys():
-                data.update({num: data[num] + 1})
+                data[num] = data[num] + 1
             else:
-                data.update({num: 1})
+                data[num] = 1
         result = 0
         for key in data.keys():
             if key + 1 in data.keys():

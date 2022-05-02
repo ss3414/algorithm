@@ -7,9 +7,9 @@ class Solution:
         data = {}
         for i in s:
             if i in data.keys():
-                data.update({i: data[i] + 1})
+                data[i] = data[i] + 1
             else:
-                data.update({i: 1})
+                data[i] = 1
         sum = 1
         for key, val in data.items():
             if val % 2 == 0:

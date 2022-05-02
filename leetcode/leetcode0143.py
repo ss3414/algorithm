@@ -8,11 +8,11 @@ from common import ListNode
 
 class Solution:
     def reorderList(self, head: ListNode) -> None:
-        temp = head
+        cursor = head
         queue = deque([])
-        while temp:
-            queue.append(temp)
-            temp = temp.next
+        while cursor:
+            queue.append(cursor)
+            cursor = cursor.next
         if len(queue) < 3:
             return
         while queue:

@@ -15,6 +15,7 @@ class Solution:
             i += 1
         return result
 
+    # 滑动窗口
     def findMaxAverage2(self, nums: list, k: int) -> float:
         temp = sum(nums[0:k])
         result = temp

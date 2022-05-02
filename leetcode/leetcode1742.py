@@ -20,9 +20,9 @@ class Solution:
         for i in range(lowLimit, highLimit + 1):
             j = digit(i)
             if j in data.keys():
-                data.update({j: data[j] + 1})
+                data[j] = data[j] + 1
             else:
-                data.update({j: 1})
+                data[j] = 1
         return max(data.values())
 
 print(Solution().countBalls(5, 15))

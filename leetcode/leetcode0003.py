@@ -23,7 +23,7 @@ class Solution:
             i -= 1
         return 0
 
-    # 边界
+    # 滑动窗口-边界
     def lengthOfLongestSubstring2(self, s: str) -> int:
         result = 0
         left = -1
@@ -32,7 +32,7 @@ class Solution:
         while i < len(s):
             if s[i] in data.keys() and data[s[i]] > left:
                 left = data[s[i]]
-            data.update({s[i]: i})
+            data[s[i]] = i
             result = max(result, i - left)
             print("{d} {l} {r}".format(d=data, l=left, r=s[left:i]))
             i += 1

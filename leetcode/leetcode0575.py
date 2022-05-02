@@ -6,7 +6,7 @@ class Solution:
     def distributeCandies(self, candyType: list) -> int:
         data = {}
         for i in candyType:
-            data.update({i: 0})
+            data[i] = 0
         return len(candyType) // 2 if len(data) >= len(candyType) // 2 else len(data)
 
 print(Solution().distributeCandies([1, 1, 2, 2, 3, 3]))

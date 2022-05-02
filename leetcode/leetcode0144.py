@@ -28,9 +28,9 @@ class Solution:
         while len(stack) > 0:
             node = stack.pop()
             nodes.append(node.val)
-            if node.right is not None:
+            if node.right:
                 stack.append(node.right)
-            if node.left is not None:
+            if node.left:
                 stack.append(node.left)
         return nodes
 

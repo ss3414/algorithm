@@ -21,7 +21,7 @@ class Solution:
             i += 1
         print(nums)
 
-    # 选择排序（无法优化，不能因为没有交换断定已排序完）
+    # 选择排序（无法优化，因为不稳定，无法断定已排序完）
     def sortColors2(self, nums: list) -> None:
         i = 0
         while i < len(nums) - 1:

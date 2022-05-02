@@ -29,9 +29,9 @@ def sort(input):
         temp = input[i]
         input[i] = input[0]
         input[0] = temp
-        print("{i}:{h}".format(i=i,h=input))
+        print("{i}:{h}".format(i=i, h=input))
         down(input, 0, i)
-        print("{i}:{h}".format(i=i,h=input))
+        print("{i}:{h}".format(i=i, h=input))
         i -= 1
 
 test = [5, 4, 3, 2, 1]

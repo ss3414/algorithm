@@ -9,6 +9,7 @@ class Solution:
     def partition(self, head: ListNode, x: int) -> ListNode:
         if head is None or head.next is None:
             return head
+
         # 找分隔点
         slow = fast = head
         count = 0

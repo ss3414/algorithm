@@ -13,7 +13,7 @@ class Solution:
             while j < 3:
                 if temp[j] in data.keys():
                     break
-                data.update({temp[j]: 1})
+                data[temp[j]] = 1
                 j += 1
                 if j == 3:
                     result += 1

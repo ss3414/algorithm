@@ -38,7 +38,6 @@ class Solution:
         return result.lstrip("0")
 
 # print(Solution().toHex(4095))
-
 print(Solution().toHex2((2 ** 31) - 1))
 print(Solution().toHex2(-(2 ** 31)))
 print(Solution().toHex2(-1))

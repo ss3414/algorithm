@@ -25,7 +25,7 @@ class Codec:
         # 去除末端None
         i = len(data) - 1
         while i >= 0:
-            if data[i] is not None:
+            if data[i]:
                 break
             i -= 1
         data = data[0:i + 1]

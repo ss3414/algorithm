@@ -11,20 +11,21 @@
 # X/XX/XXX/XL/XC（10~40，90）
 # V/VI/VII/VIII（5~8）
 # I/II/III/IV/IX（1~4，9）
-def test(s):
-    data = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-    digits = list(s)
-    i = 0
-    total = 0
-    while i < len(digits):
-        value = data[digits[i]]
-        # 罗马数字规律，左边的数字大于等于右边则为正，反之为负
-        if i == len(digits) - 1 or data[digits[i]] >= data[digits[i + 1]]:
-            total += value
-        else:
-            total -= value
-        i += 1
-        print(total)
-    return total
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        data = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+        digits = list(s)
+        i = 0
+        total = 0
+        while i < len(digits):
+            value = data[digits[i]]
+            # 罗马数字规律，左边的数字大于等于右边则为正，反之为负
+            if i == len(digits) - 1 or data[digits[i]] >= data[digits[i + 1]]:
+                total += value
+            else:
+                total -= value
+            i += 1
+            print(total)
+        return total
 
-print(test("MMMCMXCIX"))
+print(Solution().romanToInt("MMMCMXCIX"))

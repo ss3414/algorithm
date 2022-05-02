@@ -24,7 +24,7 @@ class Solution:
             return 0
         return test(root, 1)
 
-    # BFS（慢）
+    # BFS（太慢）
     def maxDepth2(self, root: Node) -> int:
         depth = 0
         if root is None:

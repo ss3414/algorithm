@@ -30,6 +30,7 @@ class Solution:
         while n > 0:
             fast = fast.next
             n -= 1
+        print(fast.val)
         if fast is None:
             return head.next
         while fast:
@@ -42,4 +43,4 @@ class Solution:
 
 # print(linkedlist2str(Solution().removeNthFromEnd(ListNode(1,ListNode(2,ListNode(3,None))),2)))
 # print(linkedlist2str(Solution().removeNthFromEnd(ListNode(1,ListNode(2,ListNode(3,None))),3)))
-print(linkedlist2str(Solution().removeNthFromEnd2(ListNode(1, ListNode(2, ListNode(3, None))), 2)))
+print(linkedlist2str(Solution().removeNthFromEnd2(ListNode(1, ListNode(2, ListNode(3, ListNode(4, None)))), 2)))

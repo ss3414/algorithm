@@ -7,17 +7,17 @@ class Solution:
         stack = []
         for i in tokens:
             if i in ["+", "-", "*", "/"]:
-                r, l = stack.pop(), stack.pop()
-                t = 0
+                right, left = stack.pop(), stack.pop()
+                temp = 0
                 if i == "+":
-                    t = l + r
+                    temp = left + right
                 if i == "-":
-                    t = l - r
+                    temp = left - right
                 if i == "*":
-                    t = l * r
+                    temp = left * right
                 if i == "/":
-                    t = int(float(l) / r)
-                stack.append(t)
+                    temp = int(float(left) / right)
+                stack.append(temp)
             else:
                 stack.append(int(i))
         return int(stack.pop())

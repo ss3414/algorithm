@@ -1,6 +1,6 @@
 # ****************************************************************分割线****************************************************************
 # todo 0082（Remove Duplicates from Sorted List II）
-# 删除有序链表中的重复元素
+# 删除有序链表中的重复元素II
 # 有重复的全部删掉
 
 from common import ListNode
@@ -16,7 +16,7 @@ class Solution:
                 count += 1
             if head.next is None or head.val != head.next.val:
                 if count == 0:
-                    cursor.next = ListNode(val=head.val)
+                    cursor.next = ListNode(head.val)
                     cursor = cursor.next
                 count = 0
             head = head.next

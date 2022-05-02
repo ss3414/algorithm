@@ -5,16 +5,15 @@
 from common import ListNode
 from common import linkedlist2str
 
-def test(head: ListNode, val: int):
-    output = ListNode(0, None)  # 开头一个空节点
-    output.next = head
-    cursor = output
-    while cursor.next:
-        if cursor.next.val == val:  # 值相等则跳过这个元素
-            cursor.next = cursor.next.next
-        else:
-            cursor = cursor.next
-    return output.next
+class Solution:
+    def removeElements(self, head: ListNode, val: int) -> ListNode:
+        empty = cursor = ListNode()
+        empty.next = head
+        while cursor.next:
+            if cursor.next.val == val:  # 值相等则跳过这个元素
+                cursor.next = cursor.next.next
+            else:
+                cursor = cursor.next
+        return empty.next
 
-output = test(ListNode(1, ListNode(2, ListNode(3, None))), 2)
-print(linkedlist2str(output))
+print(linkedlist2str(Solution().removeElements(ListNode(1, ListNode(2, ListNode(3, None))), 2)))

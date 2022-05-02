@@ -9,7 +9,7 @@ def test(nums: list):
     while i < len(nums):
         val = data.get(nums[i])
         if val is None:
-            data.update({nums[i]: 1})
+            data[nums[i]] = 1
         elif val == 1:
             return True
         i += 1

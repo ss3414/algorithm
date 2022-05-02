@@ -19,7 +19,7 @@ def partition(input, left, right):
             input[i], input[mark] = input[mark], input[i]
             mark += 1
         i += 1
-    print("{p} {i}".format(p=input[pivot],i=input))
+    print("{p} {i}".format(p=input[pivot], i=input))
     input[pivot], input[mark - 1] = input[mark - 1], input[pivot]  # 交换基准元素与mark指针
     return mark - 1
 

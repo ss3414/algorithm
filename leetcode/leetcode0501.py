@@ -14,7 +14,7 @@ class Solution:
                 val = 1
             else:
                 val += 1
-            data.update({root.val: val})
+            data[root.val] = val
             test(root.left, data)
             test(root.right, data)
 

@@ -3,7 +3,7 @@
 # 下一个更大元素
 
 class Solution:
-    # 嵌套循环（慢）
+    # 嵌套循环（太慢）
     def nextGreaterElement(self, nums1: list, nums2: list) -> list:
         result = [-1] * len(nums1)
         i = 0
@@ -29,7 +29,7 @@ class Solution:
         data = {}
         i = 0
         while i < len(nums2):
-            data.update({nums2[i]: i})
+            data[nums2[i]] = i
             i += 1
         j = 0
         while j < len(nums1):
@@ -50,7 +50,7 @@ class Solution:
         # 把nums2中每个元素和右边更大元素建立对应关系
         for num in nums2:
             while len(stack) > 0 and stack[-1] < num:  # 碰到小的入栈，碰到大的全部出栈
-                data.update({stack[-1]: num})
+                data[stack[-1]] = num
                 stack.pop()
             stack.append(num)
         for num in nums1:

@@ -9,7 +9,6 @@ class Solution:
     def findRelativeRanks(self, score: list) -> list:
         result = [None] * len(score)
         rank = 1
-        # Python中优先队列使用堆实现
         orders = PriorityQueue()
         i = 0
         while i < len(score):

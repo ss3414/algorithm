@@ -17,7 +17,7 @@ class Solution:
             if root in data.keys():
                 return data[root]
             h = max(test(root.left), test(root.right)) + 1
-            data.update({root: h})
+            data[root] = h
             return h
 
         if root is None:

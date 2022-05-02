@@ -3,7 +3,7 @@
 # 数质数
 
 class Solution:
-    # 埃拉托斯特尼筛法（慢）
+    # 埃拉托斯特尼筛法（太慢）
     def countPrimes(self, n: int) -> int:
         result = 0
         primes = [True] * n
@@ -18,7 +18,7 @@ class Solution:
         # print(primes)
         return result
 
-    # 利用Python特性，countPrimes的优化版（快）
+    # 利用Python特性，countPrimes的优化版
     def countPrimes2(self, n: int) -> int:
         if n < 3:
             return 0

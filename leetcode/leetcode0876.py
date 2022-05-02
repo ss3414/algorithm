@@ -4,17 +4,16 @@
 
 from common import ListNode
 
-# 快慢指针
-def test(head: ListNode):
-    slow = fast = head
-    while fast.next and fast.next.next:
-        fast = fast.next.next
-        slow = slow.next
-    if fast.next is None:
-        return slow
-    else:
-        return slow.next
+class Solution:
+    # 快慢指针
+    def middleNode(self, head: ListNode) -> ListNode:
+        fast = slow = head
+        while fast.next and fast.next.next:
+            fast = fast.next.next
+            slow = slow.next
+        if fast.next is None:
+            return slow
+        else:
+            return slow.next
 
-# node=ListNode(1,ListNode(2,ListNode(3,None)))
-node = ListNode(1, ListNode(2, None))
-print(test(node).val)
+print(Solution().middleNode(ListNode(1, ListNode(2, None))).val)

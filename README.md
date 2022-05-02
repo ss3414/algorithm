@@ -203,8 +203,10 @@ leetcode1991（Find the Middle Index in Array）<br>
 
 ## 中等
 leetcode0002（Add Two Numbers）<br>
+leetcode0011（Container With Most Water）<br>
 leetcode0019（Remove Nth Node From End of List）<br>
 leetcode0024（Swap Nodes in Pairs）<br>
+leetcode0034（Find First and Last Position of Element in Sorted Array）<br>
 leetcode0061（Rotate List）<br>
 leetcode0062（Unique Paths）<br>
 leetcode0071（Simplify Path）<br>
@@ -212,9 +214,12 @@ leetcode0075（Sort Colors）<br>
 leetcode0082（Remove Duplicates from Sorted List II）<br>
 leetcode0086（Partition List）<br>
 leetcode0092（Reverse Linked List II）<br>
+leetcode0095（Unique Binary Search Trees II）<br>
+leetcode0096（Unique Binary Search Trees）<br>
 leetcode0098（Validate Binary Search Tree）<br>
 leetcode0099（Recover Binary Search Tree）<br>
 leetcode0102（Binary Tree Level Order Traversal）<br>
+leetcode0103（Binary Tree Zigzag Level Order Traversal）<br>
 leetcode0105（Construct Binary Tree from Preorder and Inorder Traversal）<br>
 leetcode0106（Construct Binary Tree from Inorder and Postorder Traversal）<br>
 leetcode0107（Binary Tree Level Order Traversal II）<br>
@@ -222,11 +227,19 @@ leetcode0109（Convert Sorted List to Binary Search Tree）<br>
 leetcode0113（Path Sum II）<br>
 leetcode0114（Flatten Binary Tree to Linked List）<br>
 leetcode0116（Populating Next Right Pointers in Each Node）<br>
+leetcode0117（Populating Next Right Pointers in Each Node II）<br>
 leetcode0128（Longest Consecutive Sequence）<br>
 leetcode0129（Sum Root to Leaf Numbers）<br>
 leetcode0130（Surrounded Regions）<br>
+leetcode0133（Clone Graph）<br>
+leetcode0138（Copy List with Random Pointer）<br>
+leetcode0142（Linked List Cycle II）<br>
 leetcode0143（Reorder List）<br>
+leetcode0147（Insertion Sort List）<br>
+leetcode0148（Sort List）<br>
 leetcode0150（Evaluate Reverse Polish Notation）<br>
+leetcode0162（Find Peak Element）<br>
+leetcode0167（Two Sum II - Input Array Is Sorted）<br>
 leetcode0173（Binary Search Tree Iterator）<br>
 leetcode0187（Repeated DNA Sequences）<br>
 leetcode0199（Binary Tree Right Side View）<br>
@@ -237,13 +250,18 @@ leetcode0211（Design Add and Search Words Data Structure）<br>
 leetcode0215（Kth Largest Element in an Array）<br>
 leetcode0220（Contains Duplicate III）<br>
 leetcode0222（Count Complete Tree Nodes）<br>
+leetcode0227（Basic Calculator II）<br>
 leetcode0230（Kth Smallest Element in a BST）<br>
 leetcode0236（Lowest Common Ancestor of a Binary Tree）<br>
 leetcode0274（H-Index）<br>
+leetcode0275（H-Index II）<br>
+leetcode0287（Find the Duplicate Number）<br>
 leetcode0307（Range Sum Query - Mutable）<br>
+leetcode0328（Odd Even Linked List）<br>
 leetcode0341（Flatten Nested List Iterator）<br>
 leetcode0386（Lexicographical Numbers）<br>
 leetcode0429（N-ary Tree Level Order Traversal）<br>
+leetcode0437（Path Sum III）<br>
 leetcode0449（Serialize and Deserialize BST）<br>
 leetcode0450（Delete Node in a BST）<br>
 leetcode0470（Implement Rand10() Using Rand7()）<br>
@@ -255,6 +273,8 @@ leetcode0676（Implement Magic Dictionary）<br>
 leetcode0677（Map Sum Pairs）<br>
 leetcode0713（Subarray Product Less Than K）<br>
 leetcode0720（Longest Word in Dictionary）<br>
+leetcode0797（All Paths From Source to Target）<br>
+leetcode0912（Sort an Array）<br>
 leetcode0918（Maximum Sum Circular Subarray）<br>
 leetcode0950（Reveal Cards In Increasing Order）<br>
 leetcode1201（Ugly Number III）<br>
@@ -266,6 +286,7 @@ leetcode2063（Vowels of All Substrings）<br>
 leetcode2221（Find Triangular Sum of an Array）<br>
 
 ## 困难
+leetcode0023（Merge k Sorted Lists）<br>
 leetcode0164（Maximum Gap）<br>
 leetcode0214（Shortest Palindrome）<br>
 leetcode0472（Concatenated Words）<br>

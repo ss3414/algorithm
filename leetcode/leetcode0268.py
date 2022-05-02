@@ -33,7 +33,7 @@ class Solution:
             if input in data.keys():
                 data[input] = 2
             else:
-                data.update({input: 1})
+                data[input] = 1
 
         data = {}
         length = len(nums)

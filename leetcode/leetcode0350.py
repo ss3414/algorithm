@@ -10,12 +10,12 @@ class Solution:
         data = {}
         for num in nums1:
             if num in data.keys():
-                data.update({num: data[num] + 1})
+                data[num] = data[num] + 1
             else:
-                data.update({num: 1})
+                data[num] = 1
         for num in nums2:
             if num in data.keys() and data[num] > 0:
-                data.update({num: data[num] - 1})
+                data[num] = data[num] - 1
                 result.append(num)
         return result
 

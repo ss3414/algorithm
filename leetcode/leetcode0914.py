@@ -3,7 +3,7 @@
 # 卡牌分组
 
 class Solution:
-    # 暴力（慢）
+    # 暴力（太慢）
     def hasGroupsSizeX(self, deck: list) -> bool:
         if len(deck) < 2:
             return False
@@ -11,9 +11,9 @@ class Solution:
         data = {}
         for i in deck:
             if i in data.keys():
-                data.update({i: data[i] + 1})
+                data[i] = data[i] + 1
             else:
-                data.update({i: 1})
+                data[i] = 1
         vals = list(data.values())
         x = 2
         while x <= min(vals):
@@ -38,9 +38,9 @@ class Solution:
         data = {}
         for i in deck:
             if i in data.keys():
-                data.update({i: data[i] + 1})
+                data[i] = data[i] + 1
             else:
-                data.update({i: 1})
+                data[i] = 1
         vals = list(data.values())
         x = vals[0]
         for val in vals:

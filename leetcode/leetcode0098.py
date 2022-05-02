@@ -7,8 +7,7 @@ from collections import deque
 from common import TreeNode
 
 class Solution:
-    # 池沼算法（BFS）
-    # BST不仅要求左小右大，还要求中序遍历升序排列
+    # 池沼算法（BST不仅要求左小右大，还要求中序遍历升序排列）
     def isValidBST(self, root: TreeNode) -> bool:
         queue = deque([root])
         while queue:

@@ -1,16 +1,19 @@
 # ****************************************************************分割线****************************************************************
 # todo 插入排序
 
-# 时间复杂度：最坏O(n^2)，最好O(n)
-# 拆分成1和n-1两个子序列，前序列有序，后序列无序
-# 外层需要循环n-1次（循环无序），每次至多需要比较n-1次
+def insert(input):
+    i = 1
+    while i < len(input):
+        temp = input[i]  # 要插入的元素
+        j = i
+        while j > 0 and input[j - 1] > temp:  # 循环有序，把比插入元素大的元素挤到后面
+            input[j] = input[j - 1]
+            j -= 1
+            print("{i} {input}".format(i=i, input=input))
+        input[j] = temp  # 插入
+        print("{i} {input}".format(i=i, input=input))
+        i += 1
+    return input
 
-list = [8, 9, 7, 6, 5, 4, 3, 2, 1]  # 8,9有序，7之后无序
-for i in range(1, len(list)):  # 循环无序
-    temp = list[i]  # 要插入的元素
-    j = i
-    while j > 0 and list[j - 1] > temp:  # 循环有序，把比插入元素大的元素挤到后面
-        list[j] = list[j - 1]
-        j -= 1
-    list[j] = temp  # 插入
-print(list)
+test = [8, 9, 7, 6]
+print(insert(test))

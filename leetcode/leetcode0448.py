@@ -7,9 +7,9 @@ class Solution:
     def findDisappearedNumbers(self, nums: list) -> list:
         data = {}
         for i in range(1, len(nums) + 1):
-            data.update({i: 0})
+            data[i] = 0
         for num in nums:
-            data.update({num: data[num] + 1})
+            data[num] = data[num] + 1
         result = []
         for key, val in data.items():
             if val == 0:

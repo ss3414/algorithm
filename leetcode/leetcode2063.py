@@ -15,7 +15,7 @@ class Solution:
         def dfs(word: str, i: int, son: str):
             if i == len(word):
                 if word.count(son) > 0:
-                    self.data.update({son: 1})
+                    self.data[son] = 1
                 return
             dfs(word, i + 1, son + word[i])
             dfs(word, i + 1, son)

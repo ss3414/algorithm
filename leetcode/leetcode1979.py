@@ -3,7 +3,7 @@
 # 最大公约数
 
 class Solution:
-    # 暴力（慢）
+    # 暴力（太慢）
     def findGCD(self, nums: list) -> int:
         max_val = max(nums)
         min_val = min(nums)

@@ -9,9 +9,9 @@ def test(nums: list, k: int):
     i = 0
     while i < len(nums):
         index = data.get(nums[i])
-        if index is not None and abs(index - i) <= k:
+        if index and abs(index - i) <= k:
             return True
-        data.update({nums[i]: i})
+        data[nums[i]] = i
         i += 1
     return False
 

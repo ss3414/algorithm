@@ -32,6 +32,5 @@ class Solution:
 
 # print(Solution().moveZeroes([0,1,0,2,0,3]))
 # print(Solution().moveZeroes([0,0,0,1,2,3]))
-
 print(Solution().moveZeroes2([0, 1, 0, 2, 0, 3]))
 # print(Solution().moveZeroes2([0,0,0,1,2,3]))

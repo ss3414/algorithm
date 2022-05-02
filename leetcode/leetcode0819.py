@@ -10,9 +10,9 @@ class Solution:
         data = {}
         for i in paragraph.split(" "):
             if i in data.keys():
-                data.update({i: data[i] + 1})
+                data[i] = data[i] + 1
             else:
-                data.update({i: 1})
+                data[i] = 1
         # print(data)
         banned.append("")
         for ban in banned:

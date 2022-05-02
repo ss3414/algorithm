@@ -3,7 +3,7 @@
 # 两个二进制数不同位的个数（汉明距离）
 
 class Solution:
-    # 字符串（快）
+    # 字符串
     def hammingDistance(self, x: int, y: int) -> int:
         count = 0
         bx, by = bin(x), bin(y)
@@ -16,7 +16,7 @@ class Solution:
             i += 1
         return count
 
-    # 位运算（慢）
+    # 位运算（太慢）
     def hammingDistance2(self, x: int, y: int) -> int:
         count = 0
         for i in range(32):

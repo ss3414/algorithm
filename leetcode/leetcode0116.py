@@ -5,14 +5,14 @@
 from collections import deque
 
 class Node:
-    def __init__(self, val: int = 0, left: "Node" = None, right: "Node" = None, next: "Node" = None):
+    def __init__(self, val: int = 0, left: = None, right: = None, next: = None):
         self.val = val
         self.left = left
         self.right = right
         self.next = next
 
 class Solution:
-    def connect(self, root: "Optional[Node]") -> "Optional[Node]":
+    def connect(self, root):
         nodes = []
         queue = deque([root])
         while queue:
@@ -28,7 +28,7 @@ class Solution:
                     queue.append(node.right)
                 i += 1
         for i in nodes:
-            print("{v} {n}".format(v=i.val, n=i.next is not None))
+            print("{v} {n}".format(v=i.val, n=i.next))
         return root
 
 left = Node(2, left=Node(4), right=Node(5))

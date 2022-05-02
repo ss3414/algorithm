@@ -3,7 +3,7 @@
 # 简化路径
 
 class Solution:
-    # 池沼算法（TMD，舍不得多给几个使用例）
+    # 池沼算法（TMD，多给几个使用例会死）
     def simplifyPath(self, path: str) -> str:
         stack = [i for i in path.split("/")]
         result = ""

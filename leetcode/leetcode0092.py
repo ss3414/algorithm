@@ -7,8 +7,8 @@ from common import linkedlist2str
 
 class Solution:
     def reverseBetween(self, head: ListNode, left: int, right: int) -> ListNode:
-        node = ListNode(next=head)  # 虚拟节点
-        slow = fast = node
+        empty = ListNode(next=head)  # 虚拟节点
+        slow = fast = empty
         i = 0
         while i < left - 1:
             slow = slow.next
@@ -26,9 +26,9 @@ class Solution:
             slow.next.next = cursor
         # print(linkedlist2str(slow))
         slow.next = new
-        return node.next
+        return empty.next
 
-node = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, None)))))
-# print(linkedlist2str(Solution().reverseBetween(node,1,4)))
-# print(linkedlist2str(Solution().reverseBetween(node,2,4)))
-print(linkedlist2str(Solution().reverseBetween(node, 2, 2)))
+head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, None)))))
+# print(linkedlist2str(Solution().reverseBetween(head,1,4)))
+# print(linkedlist2str(Solution().reverseBetween(head,2,4)))
+print(linkedlist2str(Solution().reverseBetween(head, 2, 2)))

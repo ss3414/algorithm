@@ -7,13 +7,13 @@ class Solution:
         data = {}
         for i in magazine:
             if i in data.keys():
-                data.update({i: data[i] + 1})
+                data[i] = data[i] + 1
             else:
-                data.update({i: 1})
+                data[i] = 1
         count = 0
         for j in ransomNote:
             if j in data.keys() and data[j] > 0:
-                data.update({j: data[j] - 1})
+                data[j] = data[j] - 1
                 count += 1
         return count == len(ransomNote)
 

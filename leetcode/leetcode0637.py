@@ -7,9 +7,8 @@ from collections import deque
 from common import TreeNode
 
 class Solution:
-    # 池沼算法
+    # 池沼算法（BFS将二叉树转数组有问题，None未加入数组）
     def averageOfLevels(self, root: TreeNode) -> list:
-        # BFS将二叉树转数组有问题，None未加入数组
         nodes = []
         queue = deque([root])
         while queue:
