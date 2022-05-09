@@ -5,7 +5,6 @@
 from common import TreeNode
 
 class Solution:
-    # 广度优先遍历
     def isSymmetric(self, root: TreeNode) -> bool:
         def test(left: TreeNode, right: TreeNode):
             if left is None and right is None:

@@ -54,7 +54,7 @@ class Solution:
                 stack.pop()
             stack.append(num)
         for num in nums1:
-            result.append(data[num] if num in data.keys() else -1)
+            result.append(data[num] if num in data else -1)
         return result
 
 # print(Solution().nextGreaterElement([4,1,2],[1,3,4,2]))

@@ -32,9 +32,9 @@ class Solution:
         queue = deque([root])
         while queue:
             depth += 1
-            breadth = len(queue)
+            l = len(queue)
             i = 0
-            while i < breadth:
+            while i < l:
                 node = queue.popleft()
                 if node and node.children:
                     for child in node.children:

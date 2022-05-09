@@ -6,7 +6,7 @@ from common import TreeNode
 
 class Solution:
     def findMode(self, root: TreeNode) -> list:
-        def test(root: TreeNode, data: dict):
+        def dfs(root: TreeNode, data: dict):
             if root is None:
                 return
             val = data.get(root.val)
@@ -15,11 +15,11 @@ class Solution:
             else:
                 val += 1
             data[root.val] = val
-            test(root.left, data)
-            test(root.right, data)
+            dfs(root.left, data)
+            dfs(root.right, data)
 
         data = {}
-        test(root, data)
+        dfs(root, data)
         max_val = max(data.values())
         result = []
         for key, val in data.items():

@@ -15,7 +15,7 @@ class Solution:
         def test(node, data):
             if node is None:
                 return None
-            if node in data.keys():
+            if node in data:
                 return data[node]
             clone = Node(node.val)
             data[node] = clone
@@ -38,7 +38,7 @@ class Solution:
         while queue:
             temp = queue.popleft()
             for i in temp.neighbors:
-                if i not in data.keys():
+                if i not in data:
                     data[i] = Node(i.val)
                     queue.append(i)
                 print("{p} {s}".format(p=data[temp].val, s=i.val))

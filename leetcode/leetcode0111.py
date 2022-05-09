@@ -17,7 +17,7 @@ class Solution:
                 return test(root.left, depth + 1)
             if root.left is None and root.right:  # 右子树
                 return test(root.right, depth + 1)
-            if root.left is None and root.right is None:  # 叶子节点，返回深度
+            if not root.left and not root.right:  # 叶子节点，返回深度
                 return depth + 1
 
         return test(root, 0)

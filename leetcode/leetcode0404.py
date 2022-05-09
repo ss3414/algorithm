@@ -7,17 +7,17 @@ from common import TreeNode
 class Solution:
     # DFS
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
-        def test(root: TreeNode, flag: bool):
+        def dfs(root: TreeNode, flag: bool):
             if root is None:
                 return 0
-            if root.left is None and root.right is None:
+            if not root.left and not root.right:
                 if flag:
                     return root.val
                 else:
                     return 0
-            return test(root.left, True) + test(root.right, False)
+            return dfs(root.left, True) + dfs(root.right, False)
 
-        return test(root, False)
+        return dfs(root, False)
 
 # left=TreeNode(2,left=TreeNode(4),right=TreeNode(5))
 # right=TreeNode(3,left=TreeNode(6),right=TreeNode(7))

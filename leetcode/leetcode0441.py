@@ -16,9 +16,10 @@ class Solution:
     def arrangeCoins2(self, n: int) -> int:
         if n <= 1:
             return n
+
         left, right = 1, n
         while left < right:
-            middle = left + (right - left) // 2
+            middle = (left + right) // 2
             if middle * (middle + 1) // 2 <= n:
                 left = middle + 1
             else:

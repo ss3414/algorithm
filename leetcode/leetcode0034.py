@@ -3,25 +3,26 @@
 # 在有序数组中寻找元素前后位置
 
 class Solution:
+    # 二分法
     def searchRange(self, nums: list, target: int) -> list:
         result = [-1, -1]
         if target not in nums:
             return result
 
+        # 左插入
         left, right = 0, len(nums)
-        while left < right:
-            middle = left + (right - left) // 2
-            # print("{l} {m} {r}".format(l=left,m=middle,r=right))
-            if nums[middle] < target:
-                left = middle + 1
+        while left <= right:
+            middle = (left + right) // 2
+            if nums[middle] >= target:
+                right = middle - 1
             else:
-                right = middle
-        result[0] = right
+                left = middle + 1
+        result[0] = left
 
+        # 右插入
         right = len(nums)
         while left < right:
-            middle = left + (right - left) // 2
-            # print("{l} {m} {r}".format(l=left,m=middle,r=right))
+            middle = (left + right) // 2
             if nums[middle] <= target:
                 left = middle + 1
             else:

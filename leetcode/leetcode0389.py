@@ -8,12 +8,12 @@ class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         data = {}
         for i in s:
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] + 1
             else:
                 data[i] = 1
         for i in t:
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] - 1
             else:
                 data[i] = 1

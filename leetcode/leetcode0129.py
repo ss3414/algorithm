@@ -9,7 +9,7 @@ class Solution:
         data = []
 
         def dfs(root: TreeNode, digit: str):
-            if root.left is None and root.right is None:
+            if not root.left and not root.right:
                 data.append(digit)
                 return
             if root.left:

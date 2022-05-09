@@ -6,7 +6,7 @@ from common import TreeNode
 
 class Solution:
     def convertBST(self, root: TreeNode) -> TreeNode:
-        if root is None or (root.left is None and root.right is None):
+        if root is None or (not root.left and not root.right):
             return root
 
         nodes = []

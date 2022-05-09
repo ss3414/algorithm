@@ -11,7 +11,8 @@ class Solution:
         def test(nums, left, right):
             if left > right:
                 return None
-            middle = left + (right - left) // 2
+
+            middle = (left + right) // 2
             root = TreeNode(nums[middle])
             # print(nums[middle])
             root.left = test(nums, left, middle - 1)
@@ -30,6 +31,7 @@ class Solution:
             return None
         if head.next is None:
             return TreeNode(head.val)
+
         slow = fast = head
         last = slow
         while fast.next and fast.next.next:

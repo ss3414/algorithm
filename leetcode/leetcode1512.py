@@ -7,7 +7,7 @@ class Solution:
         result = 0
         data = {}
         for i in nums:
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] + 1
             else:
                 data[i] = 1

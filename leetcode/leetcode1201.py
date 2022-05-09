@@ -36,7 +36,7 @@ class Solution:
         # 二分法
         left, right = 0, 2e9
         while left < right:
-            middle = left + (right - left) // 2
+            middle = (left + right) // 2
             temp = middle // a + middle // b + middle // c - middle // lcm(a, b) - middle // lcm(a, c) - middle // lcm(b, c) + middle // lcm(a, lcm(b, c))
             print("{l} {m} {r} {t}".format(l=left, m=middle, r=right, t=temp))
             if temp < n:

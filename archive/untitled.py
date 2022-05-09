@@ -71,6 +71,12 @@
 # print(stack.pop())
 
 # 数组充当队列
+# queue=[1,2,3]
+# queue.append(4)
+# print(queue.pop(0))
+# print(queue.pop(0))
+
+# 双端队列
 # from collections import deque
 # queue=deque([1,2,3])
 # queue.append(4)

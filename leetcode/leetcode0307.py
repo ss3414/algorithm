@@ -1,6 +1,6 @@
 # ****************************************************************分割线****************************************************************
 # todo 0307（Range Sum Query - Mutable）
-# 区域和搜索（数组可变）
+# 区间和搜索（数组可变）
 
 # 线段树
 # 输入：1,2,3
@@ -59,7 +59,7 @@ class NumArray:
         middle = low + (high - low) // 2
         return self.rangeUtil(qlow, qhigh, low, middle, 2 * position + 1) + self.rangeUtil(qlow, qhigh, middle + 1, high, 2 * position + 2)
 
-    # 求输入数组指定范围的和
+    # 求输入数组指定区间的和
     def sumRange(self, left: int, right: int) -> int:
         return self.rangeUtil(left, right, 0, self.n - 1, 0)
 

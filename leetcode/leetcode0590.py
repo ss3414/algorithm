@@ -7,19 +7,18 @@ from common import Node
 class Solution:
     # 递归
     def postorder(self, root: Node) -> list:
-        def test(node: Node, nodes: list):
+        def dfs(node: Node, nodes: list):
             if node is None:
                 return
             if node.children:
                 for child in node.children:
-                    test(child, nodes)
+                    dfs(child, nodes)
             nodes.append(node.val)
-            return
 
         nodes = []
         if root is None:
             return nodes
-        test(root, nodes)
+        dfs(root, nodes)
         return nodes
 
     # 栈（后序遍历用栈最后需要反转）
@@ -43,5 +42,5 @@ class Solution:
 node2 = Node(2, children=[Node(5), Node(6)])
 node3 = Node(3, children=[Node(7), Node(8)])
 root = Node(1, children=[node2, node3, Node(4)])
-# print(Solution().postorder(root))
+print(Solution().postorder(root))
 print(Solution().postorder2(root))

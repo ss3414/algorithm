@@ -33,7 +33,7 @@ def tree2array(root: TreeNode):
     def test(root: TreeNode, nodes: list):
         if root is None:
             return
-        if root.left is None and root.right is None:
+        if not root.left and not root.right:
             return
         nodes.append(root.left.val if root.left else None)
         nodes.append(root.right.val if root.right else None)

@@ -14,10 +14,10 @@ class Solution:
             return result
         queue = deque([root])
         while queue:
-            breadth = len(queue)  # 用宽度控制每层出队数量
+            l = len(queue)  # 用宽度控制每层出队数量
             i = 0
             temp = []
-            while i < breadth:
+            while i < l:
                 node = queue.popleft()
                 temp.append(node.val)
                 if node and node.children:

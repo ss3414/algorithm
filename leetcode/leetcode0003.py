@@ -30,7 +30,7 @@ class Solution:
         data = {}  # 保存字符和最后出现的位置
         i = 0
         while i < len(s):
-            if s[i] in data.keys() and data[s[i]] > left:
+            if s[i] in data and data[s[i]] > left:
                 left = data[s[i]]
             data[s[i]] = i
             result = max(result, i - left)

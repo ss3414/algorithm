@@ -10,7 +10,8 @@ class Solution:
         def test(nums, left, right):
             if left > right:
                 return None
-            middle = left + (right - left) // 2
+
+            middle = (left + right) // 2
             root = TreeNode(nums[middle])
             print(nums[middle])
             root.left = test(nums, left, middle - 1)

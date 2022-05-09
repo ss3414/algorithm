@@ -10,7 +10,7 @@ class Solution:
         for num in nums1:
             data[num] = 1
         for num in nums2:
-            if num in data.keys():
+            if num in data:
                 data[num] = 2
         result = []
         for key, val in data.items():

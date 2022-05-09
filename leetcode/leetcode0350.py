@@ -9,12 +9,12 @@ class Solution:
         result = []
         data = {}
         for num in nums1:
-            if num in data.keys():
+            if num in data:
                 data[num] = data[num] + 1
             else:
                 data[num] = 1
         for num in nums2:
-            if num in data.keys() and data[num] > 0:
+            if num in data and data[num] > 0:
                 data[num] = data[num] - 1
                 result.append(num)
         return result

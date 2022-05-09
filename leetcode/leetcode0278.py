@@ -27,7 +27,7 @@ class Solution:
     def firstBadVersion2(self, n: int) -> int:
         left, right = 1, n
         while left < right:
-            middle = left + (right - left) // 2
+            middle = (left + right) // 2
             print("{l} {m} {r}".format(l=left, m=middle, r=right))
             if isBadVersion(middle):
                 right = middle

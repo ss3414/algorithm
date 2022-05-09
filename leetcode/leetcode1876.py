@@ -11,7 +11,7 @@ class Solution:
             j = 0
             data = {}
             while j < 3:
-                if temp[j] in data.keys():
+                if temp[j] in data:
                     break
                 data[temp[j]] = 1
                 j += 1

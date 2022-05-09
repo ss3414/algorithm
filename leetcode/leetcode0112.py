@@ -26,7 +26,7 @@ class Solution:
     def hasPathSum2(self, root: TreeNode, targetSum: int) -> bool:
         def test(root: TreeNode, targetSum: int):
             if root:
-                if root.left is None and root.right is None:
+                if not root.left and not root.right:
                     if targetSum - root.val == 0:  # 叶子节点
                         return True
                     else:
@@ -41,5 +41,5 @@ class Solution:
 left = TreeNode(2, left=TreeNode(4), right=TreeNode(5))
 right = TreeNode(3, left=TreeNode(6), right=TreeNode(7))
 root = TreeNode(1, left=left, right=right)
-print(Solution().hasPathSum(root, 7))
+# print(Solution().hasPathSum(root, 7))
 print(Solution().hasPathSum2(TreeNode(1, right=TreeNode(2)), 1))

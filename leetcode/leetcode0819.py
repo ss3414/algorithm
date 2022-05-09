@@ -9,14 +9,14 @@ class Solution:
         paragraph = re.sub("[!?',;.]", " ", paragraph.lower())
         data = {}
         for i in paragraph.split(" "):
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] + 1
             else:
                 data[i] = 1
         # print(data)
         banned.append("")
         for ban in banned:
-            if ban in data.keys():
+            if ban in data:
                 del data[ban]
         return max(data, key=data.get)
 

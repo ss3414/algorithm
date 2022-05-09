@@ -14,7 +14,7 @@ class Solution:
         def test(root: TreeNode):
             if root is None:
                 return 0
-            if root in data.keys():
+            if root in data:
                 return data[root]
             h = max(test(root.left), test(root.right)) + 1
             data[root] = h

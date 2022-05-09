@@ -19,7 +19,7 @@ class Solution:
         data = {}
         for i in range(lowLimit, highLimit + 1):
             j = digit(i)
-            if j in data.keys():
+            if j in data:
                 data[j] = data[j] + 1
             else:
                 data[j] = 1

@@ -8,7 +8,7 @@ class Solution:
         result = []
         left, right = 0, len(citations) - 1
         while left <= right:
-            middle = left + (right - left) // 2
+            middle = (left + right) // 2
             # print("{l} {r} {m}".format(l=left,r=right,m=middle))
             temp = right - middle + 1
             if citations[middle] <= temp:

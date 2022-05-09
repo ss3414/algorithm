@@ -5,7 +5,7 @@
 from common import TreeNode
 
 class Solution:
-    # 递归（官方不推荐）
+    # 递归
     def preorderTraversal(self, root: TreeNode) -> list:
         def test(root: TreeNode, nodes: list):
             if root is None:

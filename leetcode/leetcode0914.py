@@ -10,7 +10,7 @@ class Solution:
 
         data = {}
         for i in deck:
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] + 1
             else:
                 data[i] = 1
@@ -37,7 +37,7 @@ class Solution:
 
         data = {}
         for i in deck:
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] + 1
             else:
                 data[i] = 1

@@ -30,7 +30,7 @@ class Solution:
     # 哈希表
     def missingNumber2(self, nums: list) -> int:
         def test(input, data):
-            if input in data.keys():
+            if input in data:
                 data[input] = 2
             else:
                 data[input] = 1

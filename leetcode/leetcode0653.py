@@ -10,15 +10,15 @@ from common import TreeNode
 class Solution:
     # DFS
     def findTarget(self, root: TreeNode, k: int) -> bool:
-        def test(root: TreeNode, k: int, data: set):
+        def dfs(root: TreeNode, k: int, data: set):
             if root is None:
                 return False
             if (k - root.val) in data:
                 return True
             data.add(root.val)
-            return test(root.left, k, data) or test(root.right, k, data)
+            return dfs(root.left, k, data) or dfs(root.right, k, data)
 
-        return test(root, k, set())
+        return dfs(root, k, set())
 
     # BFS
     def findTarget2(self, root: TreeNode, k: int) -> bool:

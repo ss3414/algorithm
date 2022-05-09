@@ -8,7 +8,7 @@ class Solution:
         result = []
 
         def test(left, right):
-            middle = left + (right - left) // 2
+            middle = (left + right) // 2
             # print("{l} {r} {m}".format(l=left,r=right,m=middle))
             if nums[middle] > nums[middle + 1] and nums[middle] > nums[middle - 1]:
                 result.append(middle)

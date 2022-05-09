@@ -6,7 +6,7 @@ class Solution:
     def longestPalindrome(self, s: str) -> int:
         data = {}
         for i in s:
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] + 1
             else:
                 data[i] = 1
@@ -17,7 +17,7 @@ class Solution:
             else:
                 sum += (val - 1)  # 奇数字符减一也能构成回文
         if sum > len(s):
-            return sum - 1  # 若全为偶数字符，sum减一
+            return sum - 1  # 如果全为偶数字符，sum减一
         else:
             return sum
 

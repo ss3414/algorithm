@@ -35,7 +35,24 @@ class Solution:
                 stack.append(node.left)
         return False
 
+    # 双重递归
+    def isSubtree2(self, root: TreeNode, subRoot: TreeNode) -> bool:
+        def test(p: TreeNode, q: TreeNode):
+            if not p and not q:  # p和q到叶子节点处都相同
+                return True
+            if not p or not q:
+                return False
+            if p.val != q.val:
+                return False
+            return test(p.left, q.left) and test(p.right, q.right)
+
+        if not root:
+            return False
+        if test(root, subRoot):
+            return True
+        return self.isSubtree2(root.left, subRoot) or self.isSubtree2(root.right, subRoot)
+
 root1 = TreeNode(0, left=TreeNode(1, left=TreeNode(2), right=TreeNode(3)), right=TreeNode(0, right=TreeNode(0)))
-# root1=TreeNode(1,left=TreeNode(2,left=TreeNode(2),right=TreeNode(3)),right=TreeNode(3,right=TreeNode(0)))
 root2 = TreeNode(1, left=TreeNode(2), right=TreeNode(3))
-print(Solution().isSubtree(root1, root2))
+# print(Solution().isSubtree(root1, root2))
+print(Solution().isSubtree2(root1, root2))

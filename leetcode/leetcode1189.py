@@ -7,7 +7,7 @@ class Solution:
     def maxNumberOfBalloons(self, text: str) -> int:
         data = {}
         for i in text:
-            if i in data.keys():
+            if i in data:
                 data[i] = data[i] + 1
             else:
                 data[i] = 1

@@ -12,7 +12,7 @@ class Solution:
         i = 0
         while i < len(pattern):
             words[i] += "@"  # 避免key/val重名
-            if (pattern[i] in data.keys() and data[pattern[i]] != words[i]) or (words[i] in data.keys() and data[words[i]] != pattern[i]):
+            if (pattern[i] in data and data[pattern[i]] != words[i]) or (words[i] in data and data[words[i]] != pattern[i]):
                 return False
             data[pattern[i]] = words[i]
             data[words[i]] = pattern[i]

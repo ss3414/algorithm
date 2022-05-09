@@ -10,7 +10,7 @@ class Solution:
         i = 0
         while i + 10 <= len(s):
             temp = s[i:i + 10]
-            if temp in data.keys():
+            if temp in data:
                 data[temp] = data[temp] + 1
             else:
                 data[temp] = 1

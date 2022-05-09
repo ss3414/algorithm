@@ -5,32 +5,31 @@
 from common import TreeNode
 
 class Solution:
-    # DFS+双层递归
+    # 双重递归
     def isBalanced(self, root: TreeNode) -> bool:
-        def test(root: TreeNode):
+        def dfs(root: TreeNode):
             if root is None:
                 return 0
-            max_val = max(test(root.left), test(root.right)) + 1
-            print("left:{left} right:{right} max:{max}".format(
-                left=left.val, right=right.val, max=max_val))
+            max_val = max(dfs(root.left), dfs(root.right)) + 1
+            print("l:{l} r:{r} m:{m}".format(l=left.val, r=right.val, m=max_val))
             return max_val  # 返回输入节点左右子树最大深度
 
         if root is None:
             return True
-        if abs(test(root.left) - test(root.right)) > 1:  # 左右节点
+        if abs(dfs(root.left) - dfs(root.right)) > 1:  # 左右节点
             return False
         return self.isBalanced(root.left) and self.isBalanced(root.right)  # 左右子树
 
     # DFS（用-1代替flag层层返回，避免重复计算）
     def isBalanced2(self, root: TreeNode) -> bool:
-        def test(root: TreeNode):
+        def dfs(root: TreeNode):
             if root is None:
                 return 0
 
-            left = test(root.left)
+            left = dfs(root.left)
             if left == -1:
                 return -1
-            right = test(root.right)
+            right = dfs(root.right)
             if right == -1:
                 return -1
             diff = abs(left - right)
@@ -40,7 +39,7 @@ class Solution:
             max_val = max(left, right) + 1
             return max_val
 
-        if test(root) == -1:
+        if dfs(root) == -1:
             return False
         else:
             return True

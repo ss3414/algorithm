@@ -14,7 +14,7 @@ class Solution:
     def singleNumber2(self, nums: list) -> int:
         data = {}
         for num in nums:
-            if num in data.keys():
+            if num in data:
                 data[num] = data[num] + 1
             else:
                 data[num] = 1

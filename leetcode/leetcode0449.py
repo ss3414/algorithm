@@ -7,6 +7,7 @@ from collections import deque
 from common import TreeNode
 
 class Codec:
+    # 层序遍历
     def serialize(self, root: TreeNode) -> str:
         data = []
 
@@ -39,12 +40,14 @@ class Codec:
     def deserialize(self, data: str) -> TreeNode:
         if data == "":
             return None
+
         vals = data.split(",")
         vals = vals[:-1]
         length = len(vals)
         nodes = [None] * (length - 1)
         nodes.insert(0, TreeNode(vals[0]))
 
+        # 二叉树数组表示
         i = 0
         while i < length:
             if vals[i] != -1:
@@ -77,14 +80,13 @@ class Codec:
 
     def deserialize2(self, data: str) -> TreeNode:
         vals = deque(int(val) for val in data.split())
-        print(vals)
 
         def test(minVal, maxVal):
-            # 利用BST左小右大特性，若下一个节点小于当前则为左节点，否则跳过
+            # 利用BST左小右大特性，如果下一个节点小于当前则为左节点，否则为右节点
             if vals and minVal < vals[0] < maxVal:
                 val = vals.popleft()
                 node = TreeNode(val)
-                node.left = test(minVal, val)
+                node.left = test(minVal, val)  # 左节点小于当前节点
                 node.right = test(val, maxVal)
                 return node
 
@@ -95,10 +97,10 @@ deser = Codec()
 left = TreeNode(2)
 right = TreeNode(6, left=TreeNode(5), right=TreeNode(7))
 root = TreeNode(4, left=left, right=right)
-# tree = ser.serialize(root)
-# print(tree)
-# ans = deser.deserialize(tree)
-
-tree = ser.serialize2(root)
+tree = ser.serialize(root)
 print(tree)
-ans = deser.deserialize2(tree)
+ans = deser.deserialize(tree)
+
+# tree = ser.serialize2(root)
+# print(tree)
+# ans = deser.deserialize2(tree)

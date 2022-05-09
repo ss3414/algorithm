@@ -15,7 +15,7 @@ class Solution:
             return result
 
         def dfs(root: TreeNode, paths: list):
-            if root.left is None and root.right is None:
+            if not root.left and not root.right:
                 if sum(paths) == targetSum:
                     result.append(paths)
             if root.left:
@@ -37,7 +37,7 @@ class Solution:
             return result
 
         def dfs(root: TreeNode, temp: list):
-            if root.left is None and root.right is None:
+            if not root.left and not root.right:
                 if sum(temp) + root.val == targetSum:
                     temp.append(root.val)
                     result.append(temp)
