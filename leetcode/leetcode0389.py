@@ -22,7 +22,7 @@ class Solution:
             if val == 1 or val == -1:
                 return key
 
-    # 异或（位运算）
+    # 位运算
     def findTheDifference2(self, s: str, t: str) -> str:
         result = 0
         for i in s:

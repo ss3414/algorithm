@@ -23,7 +23,7 @@ class Solution:
             i -= 1
         return 0
 
-    # 滑动窗口-边界
+    # 滑动窗口
     def lengthOfLongestSubstring2(self, s: str) -> int:
         result = 0
         left = -1

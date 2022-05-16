@@ -14,3 +14,6 @@ SELECT name AS customers FROM customers WHERE id NOT IN (SELECT customerid FROM 
 
 /* todo 0196（删除重复的邮件） */
 DELETE p2 FROM person p1,person p2 WHERE p1.email=p2.email AND p2.id>p1.id
+
+/* todo 0197（上升的温度） */
+SELECT w1.id FROM weather w1,weather w2 WHERE w1.temperature>w2.temperature AND DATEDIFF(w1.recordDate,w2.recordDate)=1

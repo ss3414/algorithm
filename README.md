@@ -8,6 +8,7 @@ linkedlist（链表）<br>
 queue（队列）<br>
 binarytree（二叉树）<br>
 heap（堆）<br>
+huffmantree（哈夫曼树）<br>
 
 # sort（排序）
 bubble：冒泡排序<br>
@@ -76,6 +77,7 @@ leetcode0183（Customers Who Never Order）<br>
 leetcode0190（Reverse Bits）<br>
 leetcode0191（Number of 1 Bits）<br>
 leetcode0196（Delete Duplicate Emails）<br>
+leetcode0197（Rising Temperature）<br>
 leetcode0202（Happy Number）<br>
 leetcode0203（Remove Linked List Elements）<br>
 leetcode0205（Isomorphic Strings）<br>
@@ -180,6 +182,7 @@ leetcode0933（Number of Recent Calls）<br>
 leetcode1025（Divisor Game）<br>
 leetcode1037（Valid Boomerang）<br>
 leetcode1051（Height Checker）<br>
+leetcode1071（Greatest Common Divisor of Strings）<br>
 leetcode1137（N-th Tribonacci Number）<br>
 leetcode1189（Maximum Number of Balloons）<br>
 leetcode1221（Split a String in Balanced Strings）<br>
@@ -212,11 +215,15 @@ leetcode0017（Letter Combinations of a Phone Number）<br>
 leetcode0019（Remove Nth Node From End of List）<br>
 leetcode0024（Swap Nodes in Pairs）<br>
 leetcode0034（Find First and Last Position of Element in Sorted Array）<br>
+leetcode0039（Combination Sum）<br>
+leetcode0040（Combination Sum II）<br>
 leetcode0049（Group Anagrams）<br>
 leetcode0061（Rotate List）<br>
 leetcode0062（Unique Paths）<br>
 leetcode0071（Simplify Path）<br>
+leetcode0074（Search a 2D Matrix）<br>
 leetcode0075（Sort Colors）<br>
+leetcode0079（Word Search）<br>
 leetcode0082（Remove Duplicates from Sorted List II）<br>
 leetcode0086（Partition List）<br>
 leetcode0092（Reverse Linked List II）<br>
@@ -250,6 +257,7 @@ leetcode0173（Binary Search Tree Iterator）<br>
 leetcode0187（Repeated DNA Sequences）<br>
 leetcode0199（Binary Tree Right Side View）<br>
 leetcode0200（Number of Islands）<br>
+leetcode0201（Bitwise AND of Numbers Range）<br>
 leetcode0204（Count Primes）<br>
 leetcode0208（Implement Trie (Prefix Tree)）<br>
 leetcode0209（Minimum Size Subarray Sum）<br>
@@ -268,8 +276,10 @@ leetcode0328（Odd Even Linked List）<br>
 leetcode0331（Verify Preorder Serialization of a Binary Tree）<br>
 leetcode0341（Flatten Nested List Iterator）<br>
 leetcode0386（Lexicographical Numbers）<br>
+leetcode0395（Longest Substring with At Least K Repeating Characters）<br>
 leetcode0429（N-ary Tree Level Order Traversal）<br>
 leetcode0437（Path Sum III）<br>
+leetcode0438（Find All Anagrams in a String）<br>
 leetcode0449（Serialize and Deserialize BST）<br>
 leetcode0450（Delete Node in a BST）<br>
 leetcode0470（Implement Rand10() Using Rand7()）<br>
@@ -289,7 +299,11 @@ leetcode0695（Max Area of Island）<br>
 leetcode0713（Subarray Product Less Than K）<br>
 leetcode0720（Longest Word in Dictionary）<br>
 leetcode0797（All Paths From Source to Target）<br>
+leetcode0816（Ambiguous Coordinates）<br>
+leetcode0820（Short Encoding of Words）<br>
+leetcode0842（Split Array into Fibonacci Sequence）<br>
 leetcode0875（Koko Eating Bananas）<br>
+leetcode0900（RLE Iterator）<br>
 leetcode0912（Sort an Array）<br>
 leetcode0918（Maximum Sum Circular Subarray）<br>
 leetcode0950（Reveal Cards In Increasing Order）<br>
@@ -305,8 +319,11 @@ leetcode2221（Find Triangular Sum of an Array）<br>
 ## 困难
 leetcode0023（Merge k Sorted Lists）<br>
 leetcode0124（Binary Tree Maximum Path Sum）<br>
+leetcode0140（Word Break II）<br>
 leetcode0164（Maximum Gap）<br>
+leetcode0212（Word Search II）<br>
 leetcode0214（Shortest Palindrome）<br>
 leetcode0297（Serialize and Deserialize Binary Tree）<br>
 leetcode0472（Concatenated Words）<br>
 leetcode0778（Swim in Rising Water）<br>
+leetcode1032（Stream of Characters）<br>
