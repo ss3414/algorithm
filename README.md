@@ -153,6 +153,7 @@ leetcode0563（Binary Tree Tilt）<br>
 leetcode0566（Reshape the Matrix）<br>
 leetcode0572（Subtree of Another Tree）<br>
 leetcode0575（Distribute Candies）<br>
+leetcode0581（Shortest Unsorted Continuous Subarray）<br>
 leetcode0589（N-ary Tree Preorder Traversal）<br>
 leetcode0590（N-ary Tree Postorder Traversal）<br>
 leetcode0594（Longest Harmonious Subsequence）<br>
@@ -160,21 +161,32 @@ leetcode0598（Range Addition II）<br>
 leetcode0605（Can Place Flowers）<br>
 leetcode0606（Construct String from Binary Tree）<br>
 leetcode0617（Merge Two Binary Trees）<br>
+leetcode0636（Exclusive Time of Functions）<br>
 leetcode0637（Average of Levels in Binary Tree）<br>
 leetcode0643（Maximum Average Subarray I）<br>
+leetcode0645（Set Mismatch）<br>
 leetcode0653（Two Sum IV - Input is a BST）<br>
+leetcode0657（Robot Return to Origin）<br>
 leetcode0661（Image Smoother）<br>
 leetcode0671（Second Minimum Node In a Binary Tree）<br>
+leetcode0674（Longest Continuous Increasing Subsequence）<br>
+leetcode0680（Valid Palindrome II）<br>
+leetcode0682（Baseball Game）<br>
+leetcode0693（Binary Number with Alternating Bits）<br>
+leetcode0697（Degree of an Array）<br>
 leetcode0700（Search in a Binary Search Tree）<br>
 leetcode0703（Kth Largest Element in a Stream）<br>
+leetcode0704（Binary Search）<br>
 leetcode0705（Design HashSet）<br>
 leetcode0706（Design HashMap）<br>
+leetcode0709（To Lower Case）<br>
 leetcode0724（Find Pivot Index）<br>
 leetcode0746（Min Cost Climbing Stairs）<br>
 leetcode0783（Minimum Distance Between BST Nodes）<br>
 leetcode0812（Largest Triangle Area）<br>
 leetcode0819（Most Common Word）<br>
 leetcode0836（Rectangle Overlap）<br>
+leetcode0844（Backspace String Compare）<br>
 leetcode0876（Middle of the Linked List）<br>
 leetcode0897（Increasing Order Search Tree）<br>
 leetcode0914（X of a Kind in a Deck of Cards）<br>
@@ -211,6 +223,7 @@ leetcode1991（Find the Middle Index in Array）<br>
 ## 中等
 leetcode0002（Add Two Numbers）<br>
 leetcode0011（Container With Most Water）<br>
+leetcode0012（Integer to Roman）<br>
 leetcode0017（Letter Combinations of a Phone Number）<br>
 leetcode0019（Remove Nth Node From End of List）<br>
 leetcode0024（Swap Nodes in Pairs）<br>
@@ -272,18 +285,23 @@ leetcode0274（H-Index）<br>
 leetcode0275（H-Index II）<br>
 leetcode0287（Find the Duplicate Number）<br>
 leetcode0307（Range Sum Query - Mutable）<br>
+leetcode0316（Remove Duplicate Letters）<br>
 leetcode0328（Odd Even Linked List）<br>
 leetcode0331（Verify Preorder Serialization of a Binary Tree）<br>
 leetcode0341（Flatten Nested List Iterator）<br>
 leetcode0386（Lexicographical Numbers）<br>
+leetcode0388（Longest Absolute File Path）<br>
+leetcode0394（Decode String）<br>
 leetcode0395（Longest Substring with At Least K Repeating Characters）<br>
 leetcode0429（N-ary Tree Level Order Traversal）<br>
 leetcode0437（Path Sum III）<br>
 leetcode0438（Find All Anagrams in a String）<br>
+leetcode0445（Add Two Numbers II）<br>
 leetcode0449（Serialize and Deserialize BST）<br>
 leetcode0450（Delete Node in a BST）<br>
 leetcode0470（Implement Rand10() Using Rand7()）<br>
 leetcode0475（Heaters）<br>
+leetcode0503（Next Greater Element II）<br>
 leetcode0508（Most Frequent Subtree Sum）<br>
 leetcode0513（Find Bottom Left Tree Value）<br>
 leetcode0515（Find Largest Value in Each Tree Row）<br>
@@ -306,6 +324,7 @@ leetcode0875（Koko Eating Bananas）<br>
 leetcode0900（RLE Iterator）<br>
 leetcode0912（Sort an Array）<br>
 leetcode0918（Maximum Sum Circular Subarray）<br>
+leetcode0946（Validate Stack Sequences）<br>
 leetcode0950（Reveal Cards In Increasing Order）<br>
 leetcode1162（As Far from Land as Possible）<br>
 leetcode1201（Ugly Number III）<br>
