@@ -20,7 +20,7 @@ class Solution:
 
         dfs(root)
         order = [i.val for i in nodes]
-        order = sorted(order)
+        order.sort()
         # print(order)
         i = 0
         while i < len(nodes):

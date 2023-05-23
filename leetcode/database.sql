@@ -17,3 +17,6 @@ DELETE p2 FROM person p1,person p2 WHERE p1.email=p2.email AND p2.id>p1.id
 
 /* todo 0197（上升的温度） */
 SELECT w1.id FROM weather w1,weather w2 WHERE w1.temperature>w2.temperature AND DATEDIFF(w1.recordDate,w2.recordDate)=1
+
+/* todo 0511（游戏玩法分析I） */
+SELECT DISTINCT player_id,MIN(event_date) as first_login FROM activity GROUP BY player_id

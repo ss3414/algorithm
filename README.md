@@ -181,22 +181,53 @@ leetcode0705（Design HashSet）<br>
 leetcode0706（Design HashMap）<br>
 leetcode0709（To Lower Case）<br>
 leetcode0724（Find Pivot Index）<br>
+leetcode0733（Flood Fill）<br>
+leetcode0744（Find Smallest Letter Greater Than Target）<br>
 leetcode0746（Min Cost Climbing Stairs）<br>
+leetcode0747（Largest Number At Least Twice of Others）<br>
+leetcode0766（Toeplitz Matrix）<br>
+leetcode0771（Jewels and Stones）<br>
 leetcode0783（Minimum Distance Between BST Nodes）<br>
+leetcode0796（Rotate String）<br>
+leetcode0804（Unique Morse Code Words）<br>
 leetcode0812（Largest Triangle Area）<br>
 leetcode0819（Most Common Word）<br>
 leetcode0836（Rectangle Overlap）<br>
 leetcode0844（Backspace String Compare）<br>
+leetcode0860（Lemonade Change）<br>
 leetcode0876（Middle of the Linked List）<br>
+leetcode0896（Monotonic Array）<br>
 leetcode0897（Increasing Order Search Tree）<br>
+leetcode0905（Sort Array By Parity）<br>
+leetcode0908（Smallest Range I）<br>
 leetcode0914（X of a Kind in a Deck of Cards）<br>
+leetcode0917（Reverse Only Letters）<br>
+leetcode0922（Sort Array By Parity II）<br>
+leetcode0925（Long Pressed Name）<br>
+leetcode0929（Unique Email Addresses）<br>
 leetcode0933（Number of Recent Calls）<br>
+leetcode0941（Valid Mountain Array）<br>
+leetcode0944（Delete Columns to Make Sorted）<br>
+leetcode0961（N-Repeated Element in Size 2N Array）<br>
+leetcode0976（Largest Perimeter Triangle）<br>
+leetcode0977（Squares of a Sorted Array）<br>
+leetcode0989（Add to Array-Form of Integer）<br>
+leetcode1002（Find Common Characters）<br>
+leetcode1009（Complement of Base 10 Integer）<br>
+leetcode1018（Binary Prefix Divisible By 5）<br>
 leetcode1025（Divisor Game）<br>
 leetcode1037（Valid Boomerang）<br>
+leetcode1046（Last Stone Weight）<br>
+leetcode1047（Remove All Adjacent Duplicates In String）<br>
 leetcode1051（Height Checker）<br>
 leetcode1071（Greatest Common Divisor of Strings）<br>
+leetcode1078（Occurrences After Bigram）<br>
+leetcode1103（Distribute Candies to People）<br>
+leetcode1108（Defanging an IP Address）<br>
+leetcode1114（Print in Order）<br>
 leetcode1137（N-th Tribonacci Number）<br>
 leetcode1189（Maximum Number of Balloons）<br>
+leetcode1207（Unique Number of Occurrences）<br>
 leetcode1221（Split a String in Balanced Strings）<br>
 leetcode1232（Check If It Is a Straight Line）<br>
 leetcode1266（Minimum Time Visiting All Points）<br>

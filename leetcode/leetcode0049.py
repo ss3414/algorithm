@@ -9,7 +9,7 @@ class Solution:
             temp = []
             for i in letter:
                 temp.append(i)
-            temp = sorted(temp)
+            temp.sort()
             key = " ".join(temp)
             if key in data:
                 data[key] += [letter]

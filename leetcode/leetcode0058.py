@@ -10,24 +10,24 @@ class Solution:
 
         # 从左边找最后一个" _"，从右边找第一个"_ "
         length = len(s)
-        begin = 0
+        start = 0
         i = 0
         while i < length - 1:
             if s[i] == " " and s[i + 1] != " ":
-                begin = i + 1
+                start = i + 1
             i += 1
 
         end = length
         if length > 0 and s[length - 1] == " ":
             j = length
-            while j > begin:
+            while j > start:
                 if s[j - 1] == " " and s[j - 2] != " ":
                     end = j - 1
                     break
                 j -= 1
-        # print("begin:{begin} end:{end}".format(begin=begin,end=end))
-        # print(s[begin:end])
-        return len(s[begin:end])
+        # print("start:{start} end:{end}".format(start=start,end=end))
+        # print(s[start:end])
+        return len(s[start:end])
 
     # 抹去右边的空格，再从右往左数到第一个空格即可
     def lengthOfLastWord2(self, s: str) -> int:

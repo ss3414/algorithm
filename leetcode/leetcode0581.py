@@ -3,17 +3,21 @@
 # 最短未排序子数组
 
 class Solution:
-    # 池沼算法
     def findUnsortedSubarray(self, nums: list) -> int:
-        length = len(nums)
-        left, right = 0, length - 1
-        while left <= right and left < length - 1 and right > 0:
-            if nums[left + 1] < nums[left] and nums[right - 1] > nums[right]:
-                break
-            if nums[left + 1] >= nums[left]:
-                left += 1
-            if nums[right - 1] <= nums[right]:
-                right -= 1
-        print("{l} {r}".format(l=left, r=right))
+        origins = nums + []
+        nums.sort()
+        l, r = 0, -1
+        flag = False
+        i = 0
+        # 记录第一个和最后一个修改
+        while i < len(nums):
+            if origins[i] != nums[i] and not flag:
+                l = i
+                flag = True
+            if origins[i] != nums[i] and flag:
+                r = i
+            i += 1
+        return r - l + 1
 
 print(Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]))
+print(Solution().findUnsortedSubarray([6, 4, 2, 8, 9, 15, 10]))

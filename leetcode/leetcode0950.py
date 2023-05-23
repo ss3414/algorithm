@@ -7,7 +7,7 @@ from collections import deque
 class Solution:
     def deckRevealedIncreasing(self, deck: list) -> list:
         l = len(deck)
-        deck = sorted(deck)
+        deck.sort()
         queue = deque([i for i in range(l)])
         result = [None] * l
         j = 0

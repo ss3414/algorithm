@@ -4,7 +4,7 @@
 
 class Solution:
     def hIndex(self, citations: list) -> int:
-        citations = sorted(citations)
+        citations.sort()
         l = h = len(citations)
         for i in citations:
             if i >= h:

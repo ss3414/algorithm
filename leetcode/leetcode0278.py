@@ -13,15 +13,15 @@ def isBadVersion(version: int) -> bool:
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         end = n
-        begin = n // 2
-        while begin != end:
-            # print("{b} {e}".format(b=begin,e=end))
-            if isBadVersion(begin):
-                end = begin
-                begin = math.ceil(begin / 2)
+        start = n // 2
+        while start != end:
+            # print("{b} {e}".format(b=start,e=end))
+            if isBadVersion(start):
+                end = start
+                start = math.ceil(start / 2)
             else:
-                begin += math.ceil((end - begin) / 2)
-        return begin
+                start += math.ceil((end - start) / 2)
+        return start
 
     # firstBadVersion简化版
     def firstBadVersion2(self, n: int) -> int:

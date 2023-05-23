@@ -17,11 +17,11 @@ class Solution:
         l = len(sub)
         if len(s) == l or len(s) % l != 0:
             return False
-        begin = 0
-        while begin + 2 * l <= len(s):
-            if s[begin:begin + l] != s[(begin + l):(begin + 2 * l)]:
+        start = 0
+        while start + 2 * l <= len(s):
+            if s[start:start + l] != s[(start + l):(start + 2 * l)]:
                 return False
-            begin += l
+            start += l
         return True
 
     def repeatedSubstringPattern2(self, s: str) -> bool:

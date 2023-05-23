@@ -5,19 +5,19 @@
 class Solution:
     def findPoisonedDuration(self, timeSeries: list, duration: int) -> int:
         sum = 0
-        begin = timeSeries[0]
+        start = timeSeries[0]
         end = timeSeries[0] + duration
         i = 1
         while i < len(timeSeries):
             if timeSeries[i] <= end:  # 重叠
                 end = timeSeries[i] + duration
             else:
-                sum += (end - begin)
-                begin = timeSeries[i]
+                sum += (end - start)
+                start = timeSeries[i]
                 end = timeSeries[i] + duration
-            print("{b} {e}".format(b=begin, e=end))
+            print("{b} {e}".format(b=start, e=end))
             i += 1
-        sum += (end - begin)
+        sum += (end - start)
         return sum
 
 print(Solution().findPoisonedDuration([1, 3, 5], 2))

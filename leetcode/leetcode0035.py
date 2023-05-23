@@ -22,25 +22,21 @@ class Solution:
 
     # 二分法
     def searchInsert2(self, nums: list, target: int) -> int:
-        low, high = 0, len(nums)  # 给多个变量赋值
+        left, right = 0, len(nums)  # 给多个变量赋值
         middle = 0
-        while low < high:
-            middle = (low + high) // 2
-            print("low:{low} high:{high} mid:{mid} target:{target} middle:{middle} left:{left} right:{right}".format(
-                low=low, high=high, mid=middle, target=target, middle=nums[middle], left=nums[low:middle], right=nums[middle:high]))
+        while left < right:
+            middle = (left + right) // 2
             if target > nums[middle]:
-                low = middle + 1
+                left = middle + 1
             else:
-                high = middle
-        print("low:{low} high:{high} mid:{mid} target:{target} middle:{middle} left:{left} right:{right}".format(
-            low=low, high=high, mid=middle, target=target, middle=nums[middle], left=nums[low:middle], right=nums[middle:high]))
-        return low
+                right = middle
+        return left
 
-    # bisect/数组二分查找算法（调用bisect，底层等价于Solution().searchInsert2）
+    # bisect（调用bisect，底层等价于Solution().searchInsert2）
     def searchInsert3(self, nums: list, target: int) -> int:
         return bisect.bisect_left(nums, target)
 
-    # fixme linear/线性回归算法
+    # linear/线性回归
     def searchInsert4(self, nums: list, target: int) -> int:
         if not nums:
             return 0
@@ -50,9 +46,9 @@ class Solution:
                 return i
         return len(nums)
 
-print(Solution().searchInsert([1, 3, 5, 7], 3))
-print(Solution().searchInsert([1, 3, 5, 7], 0))
-print(Solution().searchInsert2([1, 3, 5, 7], 3))
-print(Solution().searchInsert2([1, 3, 5, 7], 0))
-print(Solution().searchInsert3([1, 3, 5, 7], 3))
+# print(Solution().searchInsert([1, 3, 5, 7], 3))
+# print(Solution().searchInsert([1, 3, 5, 7], 0))
+# print(Solution().searchInsert2([1, 3, 5, 7], 3))
+# print(Solution().searchInsert2([1, 3, 5, 7], 0))
+# print(Solution().searchInsert3([1, 3, 5, 7], 3))
 print(Solution().searchInsert4([1, 3, 5, 7], 3))

@@ -18,7 +18,7 @@ def cocktail(input):
             j += 1
         if is_sorted:
             break
-        print("奇：{input} range:{begin}~{end}".format(input=input, begin=i, end=end))
+        print("奇：{input} range:{start}~{end}".format(input=input, start=i, end=end))
         # 偶数轮，从右向左
         j = end
         is_sorted = True
@@ -31,7 +31,7 @@ def cocktail(input):
             j -= 1
         if is_sorted:
             break
-        print("偶：{input} range:{begin}~{end}".format(input=input, begin=end, end=i))
+        print("偶：{input} range:{start}~{end}".format(input=input, start=end, end=i))
         i += 1
     return input
 

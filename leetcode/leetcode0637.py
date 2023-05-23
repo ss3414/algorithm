@@ -20,9 +20,9 @@ class Solution:
         print(nodes)
 
         output = []
-        begin, between = 0, 1
-        while begin + between <= len(nodes):
-            temp = nodes[begin:begin + between]
+        start, between = 0, 1
+        while start + between <= len(nodes):
+            temp = nodes[start:start + between]
             sum = 0
             count = 0
             i = 0
@@ -32,7 +32,7 @@ class Solution:
                     count += 1
                 i += 1
             output.append(float(sum / count))
-            begin = begin + between
+            start = start + between
             between *= 2
         return output
 
