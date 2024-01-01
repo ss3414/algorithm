@@ -5,7 +5,7 @@
 from collections import deque
 
 class Node:
-    def __init__(self, val: int = 0, left: = None, right: = None, next: = None):
+    def __init__(self, val: int = 0, left=None, right=None, next=None):
         self.val = val
         self.left = left
         self.right = right
@@ -16,12 +16,12 @@ class Solution:
         nodes = []
         queue = deque([root])
         while queue:
-            l = len(queue)
+            length = len(queue)
             i = 0
-            while i < l:
+            while i < length:
                 node = queue.popleft()
                 if node:
-                    if i < l - 1:
+                    if i < length - 1:
                         node.next = queue[0]
                     nodes.append(node)
                     queue.append(node.left)
